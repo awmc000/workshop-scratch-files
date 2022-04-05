@@ -1,0 +1,6 @@
+====
+Item:          This house has 2 bedrooms, 1 bathrooms, and was built in 1940. It is Art Deco style. Small pre-war house.Painted blue with a brick chimney.
+Item number:   2
+Street address:31 Cherry
+Customer name :Tamika
+====

@@ -1,0 +1,6 @@
+====
+Item:          Store built in 0 with 1 bathrooms, selling 2products. Architectural style is Unspecified. Building
+Item number:   2
+Street address:3 Applewood
+Customer name :Milly
+====

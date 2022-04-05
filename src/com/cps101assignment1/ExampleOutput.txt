@@ -1,0 +1,105 @@
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files\src\com\cps101assignment1>  & 'C:\Program Files\Java\jdk-16.0.1\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\AMC\AppData\Roaming\Code\User\workspaceStorage\7b07c7a3c3f5993863814dcaf9cf57aa\redhat.java\jdt_ws\jdt.ls-java-project\bin' 'com.cps101assignment1.EmployeeApp' 
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+1
+Enter the ID of the new employee
+600
+Enter the given name of the new employee
+Leonard
+Enter the surname of the new employee
+Hew
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+1
+Enter the ID you wish to search:
+200
+Found the following employee:
+Employee #200: Monster, Cookie
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+2
+Enter the first name you wish to search:
+Anna
+Found the following employee:
+Employee #100: Karenina, Anna
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+3
+Enter the first name, a space, and the surname you wish to search:
+Karl Liebknecht
+Error: Cannot invoke "com.cps101assignment1.Employee.toString()" because the return value of "com.cps101assignment1.EmployeeList.findEmp(String, String)" is null
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+3
+Enter the first name, a space, and the surname you wish to search:
+Frank Lu
+Found the following employee:
+Employee #300: Lu, Frank
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+3
+Enter the ID of the employee you wish to remove.
+200
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+4
+ID#100: Karenina, Anna.
+ID#300: Lu, Frank.
+ID#400: Losurdo, Domenico.
+ID#500: Rodney, Walter.
+ID#600: Hew, Leonard.
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+5
