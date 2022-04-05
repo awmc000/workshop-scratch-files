@@ -1,0 +1,93 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>40</x><y>298</y><w>210</w><h>320</h></coordinates><panel_attributes>BinarySearchTree
+--
+- root: Node&lt;T&gt;
+--
++ getRoot(): Node&lt;T&gt;
++ getHeight(): int
+- getHeight(Node&lt;T&gt;): int
++ search(T): Node&lt;T&gt;
++ insert(Node&lt;T&gt;)
++ printInOrder(Node&lt;T&gt;)
++ printInPreOrder(Node&lt;T&gt;)
++ printInPostOrder(Node&lt;T&gt;)
+- printInLevelOrderLoop(Node&lt;T&gt;)
++ printInLevelOrderLoop()
++ printLevelOrder()
+- printLevel(Node&lt;T&gt;, int)
++ remove(T) : boolean
++ treeToString(Node&lt;T&gt;) : String
+- treeToLines(Node&lt;T&gt;): String[]
+- getRepeated(char, int): String
+- getSpaces(int): String
+- indentLines(String[], int)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>678</y><w>210</w><h>40</h></coordinates><panel_attributes>BinarySearchTreeApp
+--
++main(String[])
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>388</y><w>300</w><h>180</h></coordinates><panel_attributes>DoublyLinkedList
+--
+# head: LinkedListNode&lt;T&gt;
+# tail: LinkedListNode&lt;T&gt;
+--
++append(LinkedListNode&lt;T&gt;)
++prepend(LinkedListNode&lt;T&gt;)
++printList()
++insertAfter(LinkedListNode&lt;T&gt;, LinkedListNode&lt;T&gt;)
++insertBefore(LinkedListNode&lt;T&gt;, LinkedListNode&lt;T&gt;)
++remove(LinkedListNode&lt;T&gt;)
++getHeadData(): T
++removeAfter(LinkedListNode&lt;T&gt;)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>618</y><w>300</w><h>110</h></coordinates><panel_attributes>GenericQueue
+--
+-linkedList: DoublyLinkedList&lt;T&gt;
+--
++enqueue(T)
++dequeue(): T
++print()
++isEmpty(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>128</y><w>300</w><h>130</h></coordinates><panel_attributes>LinkedListNode
+--
++data: T
++next: LinkedListNode&lt;T&gt;
++previous: LinkedListNode&lt;T&gt;
+--
++printData()
++getData(): T
++compareTo(LinkedListNode&lt;T&gt;): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>128</y><w>210</w><h>200</h></coordinates><panel_attributes>TrieNode
+--
+-isTerminalNode: boolean
+-key: Character
++NUM_CHARACTERS: int
++children: TrieNode[]
+--
++setKey(Character)
++getKey(): Character
++setIsTerminalNode(boolean)
++getIsTerminalNode(): boolean
++childrenEmpty(): boolean
++compareTo(TrieNode): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>122</y><w>210</w><h>100</h></coordinates><panel_attributes>Node
+--
++data: T
++left: Node&lt;T&gt;
++right: Node&lt;T&gt;
+--
++compareTo(Node): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>392</y><w>280</w><h>210</h></coordinates><panel_attributes>Trie
+--
+-root: TrieNode
+--
++getRoot(): TrieNode
++insert(String)
++search(String): TrieNode
++contains(String): boolean
++delete(String): boolean
+-deleteRecursive(TrieNode, String, int): boolean
++printInLevelOrderLoop(TrieNode)
++printInLevelOrderLoop()
+-displayRecursive(TrieNode, int)
++display()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>252</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>562</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>320</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>210</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>610</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>60</x><y>20</y><w>170</w><h>90</h></coordinates><panel_attributes>Note that T refers to a
+generic type throughout,
+and which type T is
+parametrized to  may be
+different between classes.
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>

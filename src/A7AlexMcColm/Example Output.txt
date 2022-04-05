@@ -1,0 +1,389 @@
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files>  & 'C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\AMC\AppData\Roaming\Code\User\workspaceStorage\7b07c7a3c3f5993863814dcaf9cf57aa\redhat.java\jdt_ws\workshop-scratch-files_855479e5\bin' 'A7AlexMcColm.AVLTreeDriver' 
+Inserting into AVL tree: 5 10 22 12 15 47 19 3 18 
+Tree height: 3
+Printing AVL Tree: 
+          ___[15]____
+         /           \
+      [10]           [22]
+     /    \         /    \
+   [5]    [12]   [19]    [47]
+  /             /
+[3]          [18]
+++++++++++++++++++++++++++++++++++++
+BST height: 6
+Printing Binary Search Tree: 
+   [5]
+  /   \
+[3]   [10]
+          \
+          [22]
+         /    \
+      [12]    [47]
+          \
+          [15]
+              \
+              [19]
+             /
+          [18]
+After deleting 12 and 30:
+BST height: 5
+   [5]
+  /   \
+[3]   [10]
+          \
+          [22]
+         /    \
+      [15]    [47]
+          \
+          [19]
+         /
+      [18]
+++++++++++++++++++++++++++++++++++++
+Height of dictionary AVL tree: 8
+Height of dictionary BST : 335
+Printing contents of each level of the dictionary BST:
+Level 0: Acid
+Level 1: Across
+Level 2: Air
+Level 3: Airborne
+Level 4: As
+Level 5: Association
+Level 6: Atmospheric
+Level 7: Canada
+Level 8: Canadians
+Level 9: Clean
+Level 10: DDT
+Level 11: Department
+Level 12: Federal
+Level 13: Ground-level
+Level 14: Health
+Level 15: It
+Level 16: Many
+Level 17: Matter
+Level 18: Medical
+Level 19: Mercury
+Level 20: Near 
+Level 21: Numerous
+Level 22: Ontario
+Level 23: Organic
+Level 24: Ozone
+Level 25: PCBs
+Level 26: PM
+Level 27: POPs
+Level 28: Particulate
+Level 29: Persistent
+Level 30: Pollutants
+Level 31: Public
+Level 32: Smog
+Level 33: Smog?
+Level 34: These
+Level 35: This
+Level 36: Toronto
+Level 37: Two
+Level 38: What
+Level 39: When
+Level 40: While
+Level 41: a
+Level 42: about
+Level 43: absenteeism
+Level 44: acid 
+Level 45: acids
+Level 46: across
+Level 47: actions
+Level 48: addressing
+Level 49: admissions
+Level 50: affected
+Level 51: affects
+Level 52: aggravated
+Level 53: agree
+Level 54: air
+Level 55: airborne
+Level 56: all
+Level 57: also
+Level 58: and
+Level 59: anything
+Level 60: are
+Level 61: areas
+Level 62: as
+Level 63: asthma
+Level 64: atmosphere
+Level 65: attributed
+Level 66: bad
+Level 67: base
+Level 68: be 
+Level 69: because
+Level 70: been
+Level 71: beginning
+Level 72: believed
+Level 73: benefit
+Level 74: between
+Level 75: big
+Level 76: billion
+Level 77: bioaccumulate
+Level 78: bioaccumulative
+Level 79: both
+Level 80: breast
+Level 81: bronchitis
+Level 82: brownish-yellow
+Level 83: building
+Level 84: by
+Level 85: by-products
+Level 86: called
+Level 87: can
+Level 88: cardiac
+Level 89: carried 
+Level 90: caused
+Level 91: causes
+Level 92: cent
+Level 93: chain
+Level 94: change
+Level 95: chemicals
+Level 96: child
+Level 97: children
+Level 98: chlordane
+Level 99: cities
+Level 100: citizens
+Level 101: clean
+Level 102: cleaner
+Level 103: climate
+Level 104: coal-fired
+Level 105: colorless
+Level 106: colour
+Level 107: combustion
+Level 108: come
+Level 109: common
+Level 110: component
+Level 111: components
+Level 112: composed
+Level 113: compounds
+Level 114: conditions
+Level 115: contact
+Level 116: contaminants
+Level 117: contributes
+Level 118: convert
+Level 119: converted
+Level 120: cooper
+Level 121: costs
+Level 122: days
+Level 123: deaths
+Level 124: depletion
+Level 125: dioxide
+Level 126: dioxins
+Level 127: diseases
+Level 128: during
+Level 129: effects
+Level 130: elderly
+Level 131: emergency
+Level 132: emissions
+Level 133: emphysema
+Level 134: energy
+Level 135: enough
+Level 136: environment
+Level 137: environmental 
+Level 138: especially
+Level 139: experts
+Level 140: exposure
+Level 141: fields
+Level 142: figures
+Level 143: fine
+Level 144: food
+Level 145: for
+Level 146: forests
+Level 147: form
+Level 148: forming
+Level 149: forms
+Level 150: found
+Level 151: from
+Level 152: fuel
+Level 153: furans
+Level 154: gains
+Level 155: gas
+Level 156: give
+Level 157: good
+Level 158: greyish
+Level 159: ground
+Level 160: ground-level
+Level 161: growth
+Level 162: has
+Level 163: have 
+Level 164: haze
+Level 165: health
+Level 166: health-related
+Level 167: heart
+Level 168: heavy
+Level 169: hello
+Level 170: highly
+Level 171: hospital
+Level 172: hot
+Level 173: humans
+Level 174: in
+Level 175: incinerators
+Level 176: include
+Level 177: industrial
+Level 178: into
+Level 179: irritating
+Level 180: is
+Level 181: issue
+Level 182: issues
+Level 183: it
+Level 184: its
+Level 185: key
+Level 186: kilometres
+Level 187: known
+Level 188: lakes
+Level 189: layer
+Level 190: level
+Level 191: linked
+Level 192: liquid 
+Level 193: living
+Level 194: long-term
+Level 195: lung
+Level 196: mainly
+Level 197: many
+Level 198: materials
+Level 199: matter
+Level 200: medical
+Level 201: metal
+Level 202: methylmercury
+Level 203: milk
+Level 204: minute
+Level 205: mixture
+Level 206: more
+Level 207: mother
+Level 208: motor
+Level 209: move
+Level 210: nickel
+Level 211: nitric
+Level 212: nitrogen
+Level 213: no
+Level 214: non-industrial
+Level 215: not
+Level 216: now
+Level 217: noxious
+Level 218: numerous
+Level 219: of 
+Level 220: often
+Level 221: on
+Level 222: only
+Level 223: or
+Level 224: organic
+Level 225: organisms
+Level 226: other
+Level 227: our
+Level 228: out
+Level 229: outstrip
+Level 230: over
+Level 231: oxides
+Level 232: ozone
+Level 233: ozone)
+Level 234: particles
+Level 235: particularly
+Level 236: particulate
+Level 237: pass
+Level 238: passed
+Level 239: password
+Level 240: per
+Level 241: persist
+Level 242: pesticides
+Level 243: placenta
+Level 244: plants
+Level 245: pollutant
+Level 246: pollutants
+Level 247: pollution 
+Level 248: potential
+Level 249: power
+Level 250: precipitation
+Level 251: present
+Level 252: primary
+Level 253: problem
+Level 254: problems
+Level 255: produced
+Level 256: production
+Level 257: progress
+Level 258: quality
+Level 259: rain
+Level 260: react
+Level 261: reacts
+Level 262: refers
+Level 263: related
+Level 264: relationship
+Level 265: remain
+Level 266: respiratory
+Level 267: result
+Level 268: room
+Level 269: safe
+Level 270: says
+Level 271: scientists
+Level 272: secondary
+Level 273: seen
+Level 274: serious
+Level 275: show
+Level 276: small
+Level 277: smelters
+Level 278: smelting
+Level 279: smog
+Level 280: smoke
+Level 281: soil
+Level 282: solid
+Level 283: sometimes
+Level 284: sources
+Level 285: stagnant
+Level 286: stay
+Level 287: streams
+Level 288: studies
+Level 289: such
+Level 290: sulphur
+Level 291: sulphuric
+Level 292: summer
+Level 293: sunlight
+Level 294: sunny
+Level 295: suspended
+Level 296: take
+Level 297: than
+Level 298: that
+Level 299: the
+Level 300: there
+Level 301: these
+Level 302: they
+Level 303: this
+Level 304: those
+Level 305: thousands
+Level 306: through
+Level 307: to
+Level 308: toxaphene
+Level 309: toxic
+Level 310: transportation
+Level 311: travelling
+Level 312: two
+Level 313: understand
+Level 314: urban
+Level 315: vehicles
+Level 316: very
+Level 317: virtually
+Level 318: visits
+Level 319: volatile
+Level 320: volatilize
+Level 321: washes
+Level 322: water
+Level 323: we
+Level 324: welcome 
+Level 325: well
+Level 326: when
+Level 327: which
+Level 328: white
+Level 329: wildlife
+Level 330: with
+Level 331: wood
+Level 332: word
+Level 333: world
+Level 334: year
+Printing contents of each level of the dictionary AVL tree:
+Level 0: diseases
+Level 1: asthma produced
+Level 2: Public chemicals linked streams
+Level 3: It actions both components ground or scientists volatile
+Level 4: Canada Organic When airborne beginning can climate converted fine incinerators mother password related smog this which
+Level 5: Airborne Department Mercury POPs This absenteeism affects anything base big building causes cities combustion contact deaths enough from heart it matter not oxides pollution rain result show sometimes suspended travelling we wood 
+Level 6: Across Association Clean Ground-level Matter Numerous PCBs Persistent Smog? Two a acids admissions agree also areas attributed because benefit bioaccumulate bronchitis by-products carried chain children clean colorless common compounds contributes costs dioxide emergency experts form gas have hospital irritating known lung milk nitric of our particularly placenta present progress reacts remain safe seen smelters soil stagnant sulphuric the to vehicles washes well wildlife world
+Level 7: Acid Air As Atmospheric Canadians DDT Federal Health Many Medical Near Ontario Ozone PM Particulate Pollutants Smog These Toronto What While about acid across addressing affected aggravated air all and are as atmosphere bad be been believed between billion bioaccumulative breast brownish-yellow by called cardiac caused cent change child chlordane citizens cleaner coal-fired colour come component composed conditions contaminants convert cooper days depletion dioxins effects emphysema environmental fields for forms furans good growth health hello humans industrial issue key layer living many metal mixture move no noxious on organisms outstrip ozone) pass persist pollutant power problem production quality react refers relationship respiratory room says secondary serious small smelting smoke solid sources stay such sunlight than these thousands toxic understand virtually volatilize water welcome when white with word year
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 

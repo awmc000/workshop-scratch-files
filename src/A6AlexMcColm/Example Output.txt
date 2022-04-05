@@ -1,0 +1,395 @@
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files>  & 'C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\AMC\AppData\Roaming\Code\User\workspaceStorage\7b07c7a3c3f5993863814dcaf9cf57aa\redhat.java\jdt_ws\workshop-scratch-files_855479e5\bin' 'A6AlexMcColm.BinarySearchTreeApp' 
+Inserting 34
+Inserting 60
+Inserting 10
+Inserting 81
+Inserting 28
+Inserting 2
+Inserting 49
+Inserting 64
+Inserting 59
+Inserting 61
+printing formatted tree:
+       _____[34]_____
+      /              \
+   [10]           ___[60]____
+  /    \         /           \
+[2]    [28]   [49]           [81]
+                  \         /
+                  [59]   [64]
+                        /
+                     [61]
+Printing in level order using loop:
+34, 10, 60, 2, 28, 49, 81, 59, 64, 61, 
+printing in level order using recursion:
+Level 0: 34
+Level 1: 10 60
+Level 2: 2 28 49 81
+Level 3: 59 64
+Level 4: 61
+Printing in-order:
+2 10 28 34 49 59 60 61 64 81
+Printing pre-order:
+34 10 2 28 60 49 59 81 64 61
+Printing post-order:
+2 28 10 59 49 61 64 81 60 34
+Height: 5
+===============Simple trie test with a few strings.===============
+Initialized the simple trie with the following strings: HELLO HELP HE DO DOUGH DOOR
+Checking if the simple trie contains the strings added by using the search algorithm.
+Searching for: HELLO. Found: found
+Searching for: HELP. Found: found
+Searching for: HE. Found: found
+Searching for: DO. Found: found
+Searching for: DOUGH. Found: found
+Searching for: DOOR. Found: found
+Now, to test for false positives, let's check for a string that should *not* be contained.
+Searching for: AXOLOTL. Found: not found
+=============== Moving on to the file test.===============
+Made file
+Made fileTrie
+Iterating through the dictionary file, checking if the trie contains each word that should have been added.
+Searched trie for: Acid.  found
+Searched trie for: Across.  found
+Searched trie for: Air.  found
+Searched trie for: Airborne.  found
+Searched trie for: As.  found
+Searched trie for: Association.  found
+Searched trie for: Atmospheric.  found
+Searched trie for: Canada.  found
+Searched trie for: Canadians.  found
+Searched trie for: Clean.  found
+Searched trie for: DDT.  found
+Searched trie for: Department.  found
+Searched trie for: Federal.  found
+Searched trie for: Ground-level. not  found
+Searched trie for: Health.  found
+Searched trie for: It.  found
+Searched trie for: Many.  found
+Searched trie for: Matter.  found
+Searched trie for: Medical.  found
+Searched trie for: Mercury.  found
+Searched trie for: Near.  found
+Searched trie for: Numerous.  found
+Searched trie for: Ontario.  found
+Searched trie for: Organic.  found
+Searched trie for: Ozone.  found
+Searched trie for: PCBs.  found
+Searched trie for: PM.  found
+Searched trie for: POPs.  found
+Searched trie for: Particulate.  found
+Searched trie for: Persistent.  found
+Searched trie for: Pollutants.  found
+Searched trie for: Public.  found
+Searched trie for: Smog.  found
+Searched trie for: Smog?. not  found
+Searched trie for: These.  found
+Searched trie for: This.  found
+Searched trie for: Toronto.  found
+Searched trie for: Two.  found
+Searched trie for: What.  found
+Searched trie for: When.  found
+Searched trie for: While.  found
+Searched trie for: a.  found
+Searched trie for: about.  found
+Searched trie for: absenteeism.  found
+Searched trie for: acid.  found
+Searched trie for: acids.  found
+Searched trie for: across.  found
+Searched trie for: actions.  found
+Searched trie for: addressing.  found
+Searched trie for: admissions.  found
+Searched trie for: affected.  found
+Searched trie for: affects.  found
+Searched trie for: aggravated.  found
+Searched trie for: agree.  found
+Searched trie for: air.  found
+Searched trie for: airborne.  found
+Searched trie for: all.  found
+Searched trie for: also.  found
+Searched trie for: and.  found
+Searched trie for: anything.  found
+Searched trie for: are.  found
+Searched trie for: areas.  found
+Searched trie for: as.  found
+Searched trie for: asthma.  found
+Searched trie for: atmosphere.  found
+Searched trie for: attributed.  found
+Searched trie for: bad.  found
+Searched trie for: base.  found
+Searched trie for: be.  found
+Searched trie for: because.  found
+Searched trie for: been.  found
+Searched trie for: beginning.  found
+Searched trie for: believed.  found
+Searched trie for: benefit.  found
+Searched trie for: between.  found
+Searched trie for: big.  found
+Searched trie for: billion.  found
+Searched trie for: bioaccumulate.  found
+Searched trie for: bioaccumulative.  found
+Searched trie for: both.  found
+Searched trie for: breast.  found
+Searched trie for: bronchitis.  found
+Searched trie for: brownish-yellow. not  found
+Searched trie for: building.  found
+Searched trie for: by.  found
+Searched trie for: by-products. not  found
+Searched trie for: called.  found
+Searched trie for: can.  found
+Searched trie for: cardiac.  found
+Searched trie for: carried.  found
+Searched trie for: caused.  found
+Searched trie for: causes.  found
+Searched trie for: cent.  found
+Searched trie for: chain.  found
+Searched trie for: change.  found
+Searched trie for: chemicals.  found
+Searched trie for: child.  found
+Searched trie for: children.  found
+Searched trie for: chlordane.  found
+Searched trie for: cities.  found
+Searched trie for: citizens.  found
+Searched trie for: clean.  found
+Searched trie for: cleaner.  found
+Searched trie for: climate.  found
+Searched trie for: coal-fired. not  found
+Searched trie for: colorless.  found
+Searched trie for: colour.  found
+Searched trie for: combustion.  found
+Searched trie for: come.  found
+Searched trie for: common.  found
+Searched trie for: component.  found
+Searched trie for: components.  found
+Searched trie for: composed.  found
+Searched trie for: compounds.  found
+Searched trie for: conditions.  found
+Searched trie for: contact.  found
+Searched trie for: contaminants.  found
+Searched trie for: contributes.  found
+Searched trie for: convert.  found
+Searched trie for: converted.  found
+Searched trie for: cooper.  found
+Searched trie for: costs.  found
+Searched trie for: days.  found
+Searched trie for: deaths.  found
+Searched trie for: depletion.  found
+Searched trie for: dioxide.  found
+Searched trie for: dioxins.  found
+Searched trie for: diseases.  found
+Searched trie for: during.  found
+Searched trie for: effects.  found
+Searched trie for: elderly.  found
+Searched trie for: emergency.  found
+Searched trie for: emissions.  found
+Searched trie for: emphysema.  found
+Searched trie for: energy.  found
+Searched trie for: enough.  found
+Searched trie for: environment.  found
+Searched trie for: environmental.  found
+Searched trie for: especially.  found
+Searched trie for: experts.  found
+Searched trie for: exposure.  found
+Searched trie for: fields.  found
+Searched trie for: figures.  found
+Searched trie for: fine.  found
+Searched trie for: food.  found
+Searched trie for: for.  found
+Searched trie for: forests.  found
+Searched trie for: form.  found
+Searched trie for: forming.  found
+Searched trie for: forms.  found
+Searched trie for: found.  found
+Searched trie for: from.  found
+Searched trie for: fuel.  found
+Searched trie for: furans.  found
+Searched trie for: gains.  found
+Searched trie for: gas.  found
+Searched trie for: give.  found
+Searched trie for: good.  found
+Searched trie for: greyish.  found
+Searched trie for: ground.  found
+Searched trie for: ground-level. not  found
+Searched trie for: growth.  found
+Searched trie for: has.  found
+Searched trie for: have.  found
+Searched trie for: haze.  found
+Searched trie for: health.  found
+Searched trie for: health-related. not  found
+Searched trie for: heart.  found
+Searched trie for: heavy.  found
+Searched trie for: hello.  found
+Searched trie for: highly.  found
+Searched trie for: hospital.  found
+Searched trie for: hot.  found
+Searched trie for: humans.  found
+Searched trie for: in.  found
+Searched trie for: incinerators.  found
+Searched trie for: include.  found
+Searched trie for: industrial.  found
+Searched trie for: into.  found
+Searched trie for: irritating.  found
+Searched trie for: is.  found
+Searched trie for: issue.  found
+Searched trie for: issues.  found
+Searched trie for: it.  found
+Searched trie for: its.  found
+Searched trie for: key.  found
+Searched trie for: kilometres.  found
+Searched trie for: known.  found
+Searched trie for: lakes.  found
+Searched trie for: layer.  found
+Searched trie for: level.  found
+Searched trie for: linked.  found
+Searched trie for: liquid.  found
+Searched trie for: living.  found
+Searched trie for: long-term. not  found
+Searched trie for: lung.  found
+Searched trie for: mainly.  found
+Searched trie for: many.  found
+Searched trie for: materials.  found
+Searched trie for: matter.  found
+Searched trie for: medical.  found
+Searched trie for: metal.  found
+Searched trie for: methylmercury.  found
+Searched trie for: milk.  found
+Searched trie for: minute.  found
+Searched trie for: mixture.  found
+Searched trie for: more.  found
+Searched trie for: mother.  found
+Searched trie for: motor.  found
+Searched trie for: move.  found
+Searched trie for: nickel.  found
+Searched trie for: nitric.  found
+Searched trie for: nitrogen.  found
+Searched trie for: no.  found
+Searched trie for: non-industrial. not  found
+Searched trie for: not.  found
+Searched trie for: now.  found
+Searched trie for: noxious.  found
+Searched trie for: numerous.  found
+Searched trie for: of.  found
+Searched trie for: often.  found
+Searched trie for: on.  found
+Searched trie for: only.  found
+Searched trie for: or.  found
+Searched trie for: organic.  found
+Searched trie for: organisms.  found
+Searched trie for: other.  found
+Searched trie for: our.  found
+Searched trie for: out.  found
+Searched trie for: outstrip.  found
+Searched trie for: over.  found
+Searched trie for: oxides.  found
+Searched trie for: ozone.  found
+Searched trie for: ozone). not  found
+Searched trie for: particles.  found
+Searched trie for: particularly.  found
+Searched trie for: particulate.  found
+Searched trie for: pass.  found
+Searched trie for: passed.  found
+Searched trie for: password.  found
+Searched trie for: per.  found
+Searched trie for: persist.  found
+Searched trie for: pesticides.  found
+Searched trie for: placenta.  found
+Searched trie for: plants.  found
+Searched trie for: pollutant.  found
+Searched trie for: pollutants.  found
+Searched trie for: pollution.  found
+Searched trie for: potential.  found
+Searched trie for: power.  found
+Searched trie for: precipitation.  found
+Searched trie for: present.  found
+Searched trie for: primary.  found
+Searched trie for: problem.  found
+Searched trie for: problems.  found
+Searched trie for: produced.  found
+Searched trie for: production.  found
+Searched trie for: progress.  found
+Searched trie for: quality.  found
+Searched trie for: rain.  found
+Searched trie for: react.  found
+Searched trie for: reacts.  found
+Searched trie for: refers.  found
+Searched trie for: related.  found
+Searched trie for: relationship.  found
+Searched trie for: remain.  found
+Searched trie for: respiratory.  found
+Searched trie for: result.  found
+Searched trie for: room.  found
+Searched trie for: safe.  found
+Searched trie for: says.  found
+Searched trie for: scientists.  found
+Searched trie for: secondary.  found
+Searched trie for: seen.  found
+Searched trie for: serious.  found
+Searched trie for: show.  found
+Searched trie for: small.  found
+Searched trie for: smelters.  found
+Searched trie for: smelting.  found
+Searched trie for: smog.  found
+Searched trie for: smoke.  found
+Searched trie for: soil.  found
+Searched trie for: solid.  found
+Searched trie for: sometimes.  found
+Searched trie for: sources.  found
+Searched trie for: stagnant.  found
+Searched trie for: stay.  found
+Searched trie for: streams.  found
+Searched trie for: studies.  found
+Searched trie for: such.  found
+Searched trie for: sulphur.  found
+Searched trie for: sulphuric.  found
+Searched trie for: summer.  found
+Searched trie for: sunlight.  found
+Searched trie for: sunny.  found
+Searched trie for: suspended.  found
+Searched trie for: take.  found
+Searched trie for: than.  found
+Searched trie for: that.  found
+Searched trie for: the.  found
+Searched trie for: there.  found
+Searched trie for: these.  found
+Searched trie for: they.  found
+Searched trie for: this.  found
+Searched trie for: those.  found
+Searched trie for: thousands.  found
+Searched trie for: through.  found
+Searched trie for: to.  found
+Searched trie for: toxaphene.  found
+Searched trie for: toxic.  found
+Searched trie for: transportation.  found
+Searched trie for: travelling.  found
+Searched trie for: two.  found
+Searched trie for: understand.  found
+Searched trie for: urban.  found
+Searched trie for: vehicles.  found
+Searched trie for: very.  found
+Searched trie for: virtually.  found
+Searched trie for: visits.  found
+Searched trie for: volatile.  found
+Searched trie for: volatilize.  found
+Searched trie for: washes.  found
+Searched trie for: water.  found
+Searched trie for: we.  found
+Searched trie for: welcome.  found
+Searched trie for: well.  found
+Searched trie for: when.  found
+Searched trie for: which.  found
+Searched trie for: white.  found
+Searched trie for: wildlife.  found
+Searched trie for: with.  found
+Searched trie for: wood.  found
+Searched trie for: word.  found
+Searched trie for: world.  found
+Searched trie for: year.  found
+Searched trie for: year-round. not  found
+Now, to remove a couple words from the trie, and check if they are contained.
+Deleted 'lung'
+Deleted 'welcome'
+Deleted 'nitrogen'
+'lung' is contained in the trie: false
+'welcome' is contained in the trie: false
+'nitrogen' is contained in the trie: false
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 

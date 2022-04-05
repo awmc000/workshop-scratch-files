@@ -1,0 +1,35 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>200</w><h>170</h></coordinates><panel_attributes>Patient
+--
+- priority: int
+- name: String
+--
++ getPriority(): int
++ setPriority(int)
++ getName(): String
++ setName(String)
++ compareTo(Patient): int
++ toString(): String
++ getSpaces(int): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>190</y><w>200</w><h>50</h></coordinates><panel_attributes>EmergencyRoom
+--
+main()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>250</y><w>200</w><h>110</h></coordinates><panel_attributes>PriorityQueue
+--
++ enqueue(Patient)
++ dequeue(): Patient
++ peek(): Patient
++ getLength(): int
++ isEmpty(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>380</x><y>30</y><w>80</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+/Comparable/
+--
+compareTo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>370</y><w>200</w><h>170</h></coordinates><panel_attributes>MaxHeap
+--
+# genericArray: T[]
+# heapSize: int
+--
+- resizeArray()
+- percolateUp(int)
+- percolateDown(int)
++ insert(T)
++ remove(): T
++ getHeapArrayString(): String
++ getHeapSize(): int
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

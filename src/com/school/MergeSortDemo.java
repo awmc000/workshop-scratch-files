@@ -3,66 +3,76 @@ package com.school;
 import java.util.Arrays;
 
 public class MergeSortDemo {
-    private static void merge(int[] numbers, int i, int j, int k) {
-        int mergedSize = k - i + 1;
-        int[] mergedNumbers = new int[mergedSize]; 
-        int mergePos = 0;
-        int leftPos = i;
-        int rightPos = j + 1;
-
-        // Add smallest element from left or right partition to merged nums
-        while (leftPos <= j && rightPos <= k) {
-            if (numbers[leftPos] <= numbers[rightPos]) {
-                mergedNumbers[mergePos] = numbers[leftPos];
-                leftPos++;
-            }
-            else {
-                mergedNumbers[mergePos] = numbers[rightPos];
-                rightPos++;
-            }
-            mergePos++;
-        }
-
-        // If left partition is not empty, add remaining elements to merged nums
-        while (leftPos <= j) {
+   private static void merge(int[] numbers, int i, int j, int k) {
+      int mergedSize = k - i + 1;                // Size of merged partition
+      int[] mergedNumbers = new int[mergedSize]; // Dynamically allocates temporary
+                                                 // array for merged numbers
+      int mergePos = 0;                          // Position to insert merged number
+      int leftPos = i;                           // Initialize left partition position
+      int rightPos = j + 1;                      // Initialize right partition position
+      
+      // Add smallest element from left or right partition to merged numbers
+      while (leftPos <= j && rightPos <= k) {
+         if (numbers[leftPos] <= numbers[rightPos]) {
             mergedNumbers[mergePos] = numbers[leftPos];
+            System.out.println("Leftpos! : " + leftPos + " Rightpos: " + rightPos);
             leftPos++;
-            mergePos++;
-        }
-
-        // If right partition is not empty, add remaining elements to merged nums
-        while (rightPos <= k) {
+         }
+         else {
             mergedNumbers[mergePos] = numbers[rightPos];
+            System.out.println("Leftpos : " + leftPos + " Rightpos!: " + rightPos);
             rightPos++;
-            mergePos++;
-        }
+         }
+         mergePos++;
+      }
+      // If left partition is not empty, add remaining elements to merged numbers
+      while (leftPos <= j) {
+         mergedNumbers[mergePos] = numbers[leftPos];
+         System.out.println("Leftpos! : " + leftPos + " Rightpos: " + rightPos);
+         leftPos++;
+         mergePos++;
+      }
+   
+      // If right partition is not empty, add remaining elements to merged numbers
+      while (rightPos <= k) {
+         mergedNumbers[mergePos] = numbers[rightPos];
+         System.out.println("Leftpos : " + leftPos + " Rightpos!: " + rightPos);
+         rightPos++;
+         mergePos++;
+      }
+   
+      // Copy merged numbers back to numbers
+      for (mergePos = 0; mergePos < mergedSize; mergePos++) {
+         numbers[i + mergePos] = mergedNumbers[mergePos];
+      }
+   }
+   
+   private static void mergeSort(int[] numbers, int i, int k) {
+      int j = 0;
+      
+      if (i < k) {
+         j = (i + k) / 2;  // Find the midpoint in the partition
 
-        // Copy merged numbers back to numbers
-        for (mergePos = 0; mergePos < mergedSize; mergePos++) {
-            numbers[i + mergePos] = mergedNumbers[mergePos];
-        }
-    }
+         // Recursively sort left and right partitions
+         mergeSort(numbers, i, j);
+         mergeSort(numbers, j + 1, k);
+            
+         // Merge left and right partition in sorted order
+         merge(numbers, i, j, k);
+      }
+   }
 
-    private static void mergeSort(int[] numbers, int i, int k) {
-        int j = 0;
-
-        if (i < k) {
-            j = (i + k) / 2; // find midpoint in partition
-
-            // Recursively sort left and right partitions
-            mergeSort(numbers, i, j);
-            mergeSort(numbers, j + 1, k);
-
-            // Merge left and right partitions in sorted order
-            merge(numbers, i, j, k);
-        }
-    }
-
-    public static void main(String[] args) {
-        int[] numbers = {33, 21, 1, 4, 9, 99, 382, 220, 202, 11, 21, -1};
-
-        System.out.println("UNSORTED: " + Arrays.toString(numbers));
-        mergeSort(numbers, 0, numbers.length - 1);
-        System.out.println("SORTED: " + Arrays.toString(numbers));
-    }
+   public static void main(String[] args) {
+      // Create an array of numbers to sort
+      int[] numbers = { 2, 12, 8, 19, 5, 30 };
+      
+      // Display the contents of the array
+      System.out.println("UNSORTED: " + Arrays.toString(numbers));
+      
+      // Call the mergeSort method
+      mergeSort(numbers, 0, 4);
+      
+      // Display the sorted contents of the array
+      System.out.println("SORTED:   " + Arrays.toString(numbers));
+   }
 }

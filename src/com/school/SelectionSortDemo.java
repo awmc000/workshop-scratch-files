@@ -9,6 +9,7 @@ public class SelectionSortDemo {
             for (int j = i + 1; j < numArray.length; j++) {
                 if (numArray[j] < numArray[indexSmallest]) {
                     indexSmallest = j;
+                
                 }
             }
             
@@ -21,7 +22,7 @@ public class SelectionSortDemo {
     }
 
     public static void main(String[] args) {
-        int[] numArray = {67, 23, 32, 80, 53, 60};
+        int[] numArray = {324, 273, 338, 334, 279};
 
         System.out.println("Unsorted: " + Arrays.toString(numArray));
         selectionSort(numArray);

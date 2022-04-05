@@ -1,0 +1,145 @@
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files>  c:; cd 'c:\Users\AMC\IdeaProjects\workshop-scratch-files'; & 'C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\AMC\AppData\Roaming\Code\User\workspaceStorage\7b07c7a3c3f5993863814dcaf9cf57aa\redhat.java\jdt_ws\workshop-scratch-files_855479e5\bin' 'com.A5AlexMcColm.PasswordValidationTestDriver' 
+0: travelling, travelling --> virtually, virtually --> 
+1: association, Association --> base, base --> during, during --> hot, hot --> incinerators, incinerators --> the, the -->
+2: effects, effects --> potential, potential --> world, world -->
+3: across, across --> organic, organic --> present, present --> quality, quality --> sunny, sunny -->
+4: (empty)
+5: gas, gas -->
+6: by-products, by-products --> costs, costs --> hospital, hospital --> wildlife, wildlife -->
+7: problem, problem --> small, small --> to, to -->
+8: (empty)
+9: federal, Federal -->
+10: cooper, cooper -->
+11: toxic, toxic -->
+12: conditions, conditions --> our, our --> passed, passed --> persist, persist --> volatile, volatile -->
+13: cities, cities --> issue, issue --> washes, washes -->
+14: when, when --> bioaccumulate, bioaccumulate --> cleaner, cleaner --> contributes, contributes --> out, out -->
+15: ozone, ozone --> benefit, benefit --> combustion, combustion --> deaths, deaths -->
+16: ddt, DDT --> change, change --> its, its --> transportation, transportation -->
+17: toronto, Toronto --> while, While --> than, than -->
+18: particulate, particulate --> composed, composed --> welcome, welcome -->
+19: (empty)
+20: been, been --> dioxins, dioxins --> gains, gains -->
+21: acid, acid --> layer, layer --> living, living --> motor, motor --> no, no --> progress, progress -->
+22: as, as --> numerous, numerous --> health-related, health-related --> hello, hello -->
+23: convert, convert --> emphysema, emphysema --> smoke, smoke --> that, that -->
+24: coal-fired, coal-fired --> colorless, colorless --> mixture, mixture --> serious, serious -->
+25: matter, matter --> actions, actions --> chain, chain --> chemicals, chemicals --> more, more --> thousands, thousands -->
+26: primary, primary --> urban, urban -->
+27: these, these --> and, and --> furans, furans --> irritating, irritating --> known, known -->
+28: ontario, Ontario -->
+29: kilometres, kilometres -->
+30: because, because --> often, often -->
+31: caused, caused --> diseases, diseases --> nitric, nitric -->
+32: contact, contact -->
+33: beginning, beginning --> breast, breast --> linked, linked -->
+34: airborne, airborne --> converted, converted --> oxides, oxides --> sometimes, sometimes --> with, with --> word, word -->
+35: (empty)
+36: big, big -->
+37: bioaccumulative, bioaccumulative --> give, give --> non-industrial, non-industrial --> sulphuric, sulphuric --> those, those -->
+38: (empty)
+39: be, be --> elderly, elderly --> scientists, scientists --> vehicles, vehicles -->
+40: affected, affected --> attributed, attributed --> have, have --> liquid, liquid --> sources, sources -->
+41: long-term, long-term --> which, which --> wood, wood -->
+42: heart, heart --> nickel, nickel -->
+43: of, of --> precipitation, precipitation -->
+44: over, over -->
+45: experts, experts --> safe, safe -->
+46: department, Department --> admissions, admissions --> causes, causes --> particularly, particularly --> well, well -->
+47: ground, ground --> highly, highly --> water, water -->
+48: compounds, compounds --> enough, enough --> include, include --> says, says -->
+49: climate, climate --> move, move -->
+50: pops, POPs --> outstrip, outstrip --> respiratory, respiratory -->
+51: common, common --> exposure, exposure --> greyish, greyish --> noxious, noxious --> on, on -->
+52: are, are --> they, they -->
+53: fields, fields --> particles, particles --> production, production --> result, result -->
+54: carried, carried --> very, very -->
+55: cardiac, cardiac --> children, children --> or, or --> password, password -->
+56: building, building --> can, can --> methylmercury, methylmercury --> rain, rain --> relationship, relationship --> secondary, secondary --> visits, visits -->
+57: power, power -->
+58: smog, smog --> fuel, fuel --> nitrogen, nitrogen --> ozone), ozone) --> year-round, year-round -->
+59: by, by --> growth, growth --> solid, solid -->
+60: come, come --> minute, minute --> placenta, placenta --> produced, produced -->
+61: smog?, Smog? -->
+62: canada, Canada --> ground-level, ground-level -->
+63: figures, figures -->
+64: haze, haze --> reacts, reacts -->
+65: in, in --> white, white -->
+66: acids, acids --> has, has -->
+67: many, many --> mercury, Mercury --> not, not --> seen, seen --> smelters, smelters -->
+68: lakes, lakes --> stagnant, stagnant --> toxaphene, toxaphene -->
+69: about, about --> bronchitis, bronchitis --> show, show --> stay, stay -->
+70: this, this --> addressing, addressing --> forests, forests --> is, is --> issues, issues --> now, now --> understand, understand -->
+71: it, it --> contaminants, contaminants --> environment, environment --> heavy, heavy --> metal, metal -->
+72: colour, colour --> energy, energy --> into, into -->
+73: all, all --> component, component --> industrial, industrial --> pollutant, pollutant -->
+74: affects, affects --> humans, humans -->
+75: smelting, smelting --> streams, streams --> such, such --> sulphur, sulphur -->
+76: two, two --> materials, materials --> other, other -->
+77: billion, billion --> for, for --> per, per --> pesticides, pesticides --> through, through -->
+78: absenteeism, absenteeism --> chlordane, chlordane --> lung, lung -->
+79: citizens, citizens --> key, key --> milk, milk --> refers, refers -->
+80: only, only --> plants, plants -->
+81: medical, medical --> pm, PM --> public, Public -->
+82: mainly, mainly -->
+83: days, days --> related, related --> suspended, suspended -->
+84: pcbs, PCBs --> emissions, emissions --> problems, problems -->
+85: atmospheric, Atmospheric --> clean, clean --> bad, bad --> called, called --> good, good -->
+86: air, air --> pollutants, pollutants --> from, from --> pollution, pollution -->
+87: persistent, Persistent --> mother, mother --> react, react --> studies, studies --> summer, summer -->
+88: believed, believed --> between, between --> depletion, depletion --> remain, remain -->
+89: both, both --> brownish-yellow, brownish-yellow --> pass, pass -->
+90: asthma, asthma --> environmental, environmental --> forming, forming --> found, found --> we, we -->
+91: also, also --> forms, forms --> take, take --> volatilize, volatilize -->
+92: health, health --> near, Near -->
+93: emergency, emergency --> especially, especially --> year, year -->
+94: anything, anything --> areas, areas --> food, food --> sunlight, sunlight -->
+95: room, room -->
+96: canadians, Canadians --> what, What --> aggravated, aggravated --> agree, agree --> cent, cent --> child, child --> dioxide, dioxide --> form, form --> level, level --> there, there -->
+97: a, a --> organisms, organisms -->
+98: atmosphere, atmosphere --> components, components --> fine, fine -->
+99: soil, soil -->
+
+Please enter a password: 
+Pass
+Failed check for a length >= 8 characters.
+Not valid, please enter another.
+Please enter a password:
+NorthIslandCollege
+Failed check for at least one letter and one digit.
+Not valid, please enter another.
+Please enter a password:
+Yak32
+Failed check for a length >= 8 characters.
+Not valid, please enter another.
+Please enter a password:
+Canadians1
+Failed check for dict word followed or preceded by digit.
+Not valid, please enter another.
+Please enter a password:
+1Canadians
+Failed check for dict word followed or preceded by digit.
+Not valid, please enter another.
+Please enter a password:
+4Numerous
+Failed check for dict word followed or preceded by digit.
+Not valid, please enter another.
+Please enter a password:
+Numerous
+Failed check for at least one letter and one digit.
+Not valid, please enter another.
+Please enter a password:
+Numerous8
+Failed check for dict word followed or preceded by digit.
+Not valid, please enter another.
+Please enter a password:
+Yakbackrid1ng!0AOes
+Password Yakbackrid1ng!0AOes is valid.
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 
+
+====== Testing -1 to exit =============================
+== I omitted the print of the dictionary ==
+
+Please enter a password: 
+-1
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 

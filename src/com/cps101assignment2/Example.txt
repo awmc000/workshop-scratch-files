@@ -1,0 +1,206 @@
+========= Checking if the algorithms work with an array of 20 2-digit random integers. =========
+Before Bubble Sort:
+[93, 21, 90, 90, 34, 68, 99, 29, 62, 42, 67, 86, 16, 37, 47, 38, 23, 41, 13, 92]
+After Bubble Sort:
+[13, 16, 21, 23, 29, 34, 37, 38, 41, 42, 47, 62, 67, 68, 86, 90, 90, 92, 93, 99]
+Before Selection Sort:
+[93, 21, 90, 90, 34, 68, 99, 29, 62, 42, 67, 86, 16, 37, 47, 38, 23, 41, 13, 92]
+After Selection Sort:
+[13, 16, 21, 23, 29, 34, 37, 38, 41, 42, 47, 62, 67, 68, 86, 90, 90, 92, 93, 99]
+Before Insertion Sort:
+[93, 21, 90, 90, 34, 68, 99, 29, 62, 42, 67, 86, 16, 37, 47, 38, 23, 41, 13, 92]
+After Insertion Sort:
+[13, 16, 21, 23, 29, 34, 37, 38, 41, 42, 47, 62, 67, 68, 86, 90, 90, 92, 93, 99]
+Before Quick Sort:
+[93, 21, 90, 90, 34, 68, 99, 29, 62, 42, 67, 86, 16, 37, 47, 38, 23, 41, 13, 92]
+After Quick Sort:
+[13, 16, 21, 23, 29, 34, 37, 38, 41, 42, 47, 62, 67, 68, 86, 90, 90, 92, 93, 99]
+Before Merge Sort:
+[93, 21, 90, 90, 34, 68, 99, 29, 62, 42, 67, 86, 16, 37, 47, 38, 23, 41, 13, 92]
+After Merge Sort:
+[13, 16, 21, 23, 29, 34, 37, 38, 41, 42, 47, 62, 67, 68, 86, 90, 90, 92, 93, 99]
+Before Radix Sort:
+[93, 21, 90, 90, 34, 68, 99, 29, 62, 42, 67, 86, 16, 37, 47, 38, 23, 41, 13, 92]
+After Radix Sort:
+[13, 16, 21, 23, 29, 34, 37, 38, 41, 42, 47, 62, 67, 68, 86, 90, 90, 92, 93, 99]
+========= Checking if the algorithms work with an array of 20 5-digit random integers. =========
+Before Bubble Sort:
+[99684, 30785, 18918, 24020, 57689, 60114, 47909, 94429, 8549, 5956, 87490, 96182, 66448, 15317, 89433, 23186, 16903, 47023, 54642, 27736]
+After Bubble Sort:
+[5956, 8549, 15317, 16903, 18918, 23186, 24020, 27736, 30785, 47023, 47909, 54642, 57689, 60114, 66448, 87490, 89433, 94429, 96182, 99684]
+Before Selection Sort:
+[99684, 30785, 18918, 24020, 57689, 60114, 47909, 94429, 8549, 5956, 87490, 96182, 66448, 15317, 89433, 23186, 16903, 47023, 54642, 27736]
+After Selection Sort:
+[5956, 8549, 15317, 16903, 18918, 23186, 24020, 27736, 30785, 47023, 47909, 54642, 57689, 60114, 66448, 87490, 89433, 94429, 96182, 99684]
+Before Insertion Sort:
+[99684, 30785, 18918, 24020, 57689, 60114, 47909, 94429, 8549, 5956, 87490, 96182, 66448, 15317, 89433, 23186, 16903, 47023, 54642, 27736]
+After Insertion Sort:
+[5956, 8549, 15317, 16903, 18918, 23186, 24020, 27736, 30785, 47023, 47909, 54642, 57689, 60114, 66448, 87490, 89433, 94429, 96182, 99684]
+Before Quick Sort:
+[99684, 30785, 18918, 24020, 57689, 60114, 47909, 94429, 8549, 5956, 87490, 96182, 66448, 15317, 89433, 23186, 16903, 47023, 54642, 27736]
+After Quick Sort:
+[5956, 8549, 15317, 16903, 18918, 23186, 24020, 27736, 30785, 47023, 47909, 54642, 57689, 60114, 66448, 87490, 89433, 94429, 96182, 99684]
+Before Merge Sort:
+[99684, 30785, 18918, 24020, 57689, 60114, 47909, 94429, 8549, 5956, 87490, 96182, 66448, 15317, 89433, 23186, 16903, 47023, 54642, 27736]
+After Merge Sort:
+[5956, 8549, 15317, 16903, 18918, 23186, 24020, 27736, 30785, 47023, 47909, 54642, 57689, 60114, 66448, 87490, 89433, 94429, 96182, 99684]
+Before Radix Sort:
+[99684, 30785, 18918, 24020, 57689, 60114, 47909, 94429, 8549, 5956, 87490, 96182, 66448, 15317, 89433, 23186, 16903, 47023, 54642, 27736]
+After Radix Sort:
+[5956, 8549, 15317, 16903, 18918, 23186, 24020, 27736, 30785, 47023, 47909, 54642, 57689, 60114, 66448, 87490, 89433, 94429, 96182, 99684]
+========= Conducting the Big O test, with very large, growing array sizes. =========
+
+Selection Sort:
+Array Size: 20000; time used: 253769800ns; C: 0.6344245
+Array Size: 40000; time used: 971083200ns; C: 0.606927
+The difference between the last two values of C is: 4.430257%
+Array Size: 60000; time used: 2563016400ns; C: 0.711949
+The difference between the last two values of C is: 15.925987%
+Array Size: 80000; time used: 3798562700ns; C: 0.59352547
+The difference between the last two values of C is: 18.142601%
+Array Size: 100000; time used: 8454184000ns; C: 0.8454184
+The difference between the last two values of C is: 35.010807%
+Array Size: 120000; time used: 8594725000ns; C: 0.5968559
+The difference between the last two values of C is: 34.468132%
+Array Size: 140000; time used: 11138170600ns; C: 0.5682741
+The difference between the last two values of C is: 4.9061995%
+Array Size: 160000; time used: 14768289500ns; C: 0.5768863
+The difference between the last two values of C is: 1.5041064%
+Array Size: 180000; time used: 18905231600ns; C: 0.58349484
+The difference between the last two values of C is: 1.1390302%
+C is found to be stable.
+
+Insertion Sort:
+Array Size: 20000; time used: 390080200ns; C: 0.9752005
+Array Size: 40000; time used: 1424808200ns; C: 0.89050514
+The difference between the last two values of C is: 9.079175%
+Array Size: 60000; time used: 1202377400ns; C: 0.3339937
+The difference between the last two values of C is: 90.89619%
+Array Size: 80000; time used: 2148214300ns; C: 0.3356585
+The difference between the last two values of C is: 0.4972096%
+Array Size: 100000; time used: 3406227600ns; C: 0.34062278
+The difference between the last two values of C is: 1.4681146%
+Array Size: 120000; time used: 4900629200ns; C: 0.34032145
+The difference between the last two values of C is: 0.08850396%
+C is found to be stable.
+
+Quick Sort:
+Array Size:20000; time used: 9749300 ns. C = 113.33681
+Array Size:40000; time used: 6556900 ns. C = 35.619373
+The difference between the last two values of C is: 104.349396%
+Array Size:60000; time used: 10544300 ns. C = 36.779568
+The difference between the last two values of C is: 3.205004%
+Array Size:80000; time used: 14705400 ns. C = 37.490135
+The difference between the last two values of C is: 1.9134787%
+Array Size:100000; time used: 18007700 ns. C = 36.0154
+The difference between the last two values of C is: 4.012583%
+C is found to be stable.
+
+Improved Quick Sort:
+Array Size:20000; time used: 3444700 ns. C = 40.04506
+Array Size:40000; time used: 953167000 ns. C = 5177.9365
+The difference between the last two values of C is: 196.93024%
+Array Size:60000; time used: 2121864900 ns. C = 7401.276
+The difference between the last two values of C is: 35.34942%
+Array Size:80000; time used: 3333519400 ns. C = 8498.517
+The difference between the last two values of C is: 13.80195%
+Array Size:100000; time used: 5237794500 ns. C = 10475.589
+The difference between the last two values of C is: 20.839687%
+Array Size:120000; time used: 9098828100 ns. C = 14928.305
+The difference between the last two values of C is: 35.055378%
+Array Size:140000; time used: 13341656200 ns. C = 18518.3
+The difference between the last two values of C is: 21.467028%
+Array Size:160000; time used: 18800028200 ns. C = 22578.299
+The difference between the last two values of C is: 19.758316%
+Array Size:180000; time used: 25010408700 ns. C = 26439.488
+The difference between the last two values of C is: 15.754238%
+Array Size:200000; time used: 31066210100 ns. C = 29302.05
+The difference between the last two values of C is: 10.270842%
+Array Size:220000; time used: 34977179100 ns. C = 29759.377
+The difference between the last two values of C is: 1.5486459%
+Array Size:240000; time used: 39960997000 ns. C = 30947.514
+The difference between the last two values of C is: 3.9143388%
+Array Size:260000; time used: 42718942200 ns. C = 30342.46
+The difference between the last two values of C is: 1.9743938%
+C is found to be stable.
+
+Merge Sort:
+Array Size:20000; time used: 13973500 ns. C = 162.44365
+Array Size:40000; time used: 24581900 ns. C = 133.53748
+The difference between the last two values of C is: 19.532444%
+Array Size:60000; time used: 21607100 ns. C = 75.367714
+The difference between the last two values of C is: 55.69011%
+Array Size:80000; time used: 44372100 ns. C = 113.122795
+The difference between the last two values of C is: 40.06046%
+Array Size:100000; time used: 30040400 ns. C = 60.0808
+The difference between the last two values of C is: 61.248146%
+Array Size:120000; time used: 30378000 ns. C = 49.84071
+The difference between the last two values of C is: 18.63164%
+Array Size:140000; time used: 42716800 ns. C = 59.29118
+The difference between the last two values of C is: 17.319355%
+Array Size:160000; time used: 50633900 ns. C = 60.80987
+The difference between the last two values of C is: 2.529024%
+Array Size:180000; time used: 44178600 ns. C = 46.702938
+The difference between the last two values of C is: 26.24233%
+Array Size:200000; time used: 50318300 ns. C = 47.460873
+The difference between the last two values of C is: 1.6098214%
+Array Size:220000; time used: 78997700 ns. C = 67.213036
+The difference between the last two values of C is: 34.449272%
+Array Size:240000; time used: 82155400 ns. C = 63.624672
+The difference between the last two values of C is: 5.4852133%
+Array Size:260000; time used: 66172800 ns. C = 47.001297
+The difference between the last two values of C is: 30.053297%
+Array Size:280000; time used: 72092800 ns. C = 47.267635
+The difference between the last two values of C is: 0.5650607%
+Array Size:300000; time used: 77635000 ns. C = 47.248055
+The difference between the last two values of C is: 0.041434057%
+Array Size:320000; time used: 86341900 ns. C = 49.01201
+The difference between the last two values of C is: 3.664976%
+C is found to be stable.
+
+Radix Sort:
+Array Size:20000; time used: 6706600 ns. C = 77.96504
+Array Size:40000; time used: 12343700 ns. C = 67.0553
+The difference between the last two values of C is: 15.045813%
+Array Size:60000; time used: 20072500 ns. C = 70.01488
+The difference between the last two values of C is: 4.318342%
+Array Size:80000; time used: 24818300 ns. C = 63.27209
+The difference between the last two values of C is: 10.117698%
+Array Size:100000; time used: 27409600 ns. C = 54.8192
+The difference between the last two values of C is: 14.31586%
+Array Size:120000; time used: 31693000 ns. C = 51.99821
+The difference between the last two values of C is: 5.281887%
+Array Size:140000; time used: 36280300 ns. C = 50.357277
+The difference between the last two values of C is: 3.2063432%
+Array Size:160000; time used: 41567200 ns. C = 49.921024
+The difference between the last two values of C is: 0.87008375%
+C is found to be stable.
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 
+
+=====================================================
+==                  MY COMMENTS                    ==
+=====================================================
+Regarding the testing process in general, I found that
+the results confirmed what I assumed and hoped would
+happen; as array sizes got larger, C values stabilized
+and algorithm's time efficiency proved to be fairly 
+well represented by their Big O time complexity.
+
+
+During the development process, I ran the test on 
+Bubble Sort,just out of curiosity. By the time array 
+sizes were over 260,000 elements or so, sorting was 
+taking more than 15 minutes per array. Bubble Sort 
+was the only* algorithm which had a C value greater 
+than 1.0 (around 3.0) on arrays larger than 100,000 
+elements, other algorithms had C values which were 
+decimal values between 0 and 1. 
+
+Further, it surprised me how much slower Selection 
+Sort was compared to Insertion, Quick, Merge, and 
+Radix Sort algorithms. 
+
+*Until I implemented my attempt at the improved 
+quick sort algorithm, which is faster than quick
+sort for the first array, and then degenerates to be
+FAR slower with massive values of C! 

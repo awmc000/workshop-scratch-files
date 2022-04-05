@@ -1,0 +1,49 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>520</x><y>100</y><w>270</w><h>120</h></coordinates><panel_attributes>GenericStack
+--
+-linkedList: DoublyLinkedList&lt;T&gt;
+--
++push(T)
++pop(): T
++print()
++isEmpty(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>100</y><w>260</w><h>120</h></coordinates><panel_attributes>GenericQueue
+--
+-linkedList: DoublyLinkedList&lt;T&gt;
+--
++enqueue(T)
++dequeue(): T
++print()
++isEmpty(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>330</y><w>310</w><h>210</h></coordinates><panel_attributes>QueueStackDriver
+--
+-integerStack: GenericStack&lt;Integer&gt;
+-integerQueue: GenericQueue&lt;Integer&gt;
+-stringStack: GenericStack&lt;String&gt;
+-stringQueue: GenericQueue&lt;String&gt;
+-intArr: int[]
+-stringArr: String[]
+--
++main(String[])
++performTest(int[], String[], GenericStack&lt;Integer&gt;, 
+GenericQueue&lt;Integer&gt;, 
+GenericStack&lt;String&gt;,
+GenericQueue&lt;String&gt;, TestTypes, TestStages): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>590</y><w>100</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TestTypes
+--
+INTEGER
+STRING</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>590</y><w>100</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TestStages
+--
+PUSH
+POP
+ENQUEUE
+DEQUEUE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>330</y><w>200</w><h>90</h></coordinates><panel_attributes>ExpressionApp
+--
++evaluatePostfix(String): String
++evaluatePrefix(String): String
+-perform(String, int, int): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>330</y><w>200</w><h>80</h></coordinates><panel_attributes>PalindromeApp
+--
++checkPalindrome(String): boolean
++main(String[])</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>530</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>530</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>210</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>210</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>240</y><w>230</w><h>30</h></coordinates><panel_attributes>lw=1.0</panel_attributes><additional_attributes>10;10;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>240</y><w>30</w><h>110</h></coordinates><panel_attributes>lw=1.0</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>210</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>210</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>210</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>260</y><w>240</w><h>40</h></coordinates><panel_attributes>lw=1.0
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>270</y><w>30</w><h>80</h></coordinates><panel_attributes>lw=1.0
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>210</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLNote</id><coordinates><x>320</x><y>100</y><w>140</w><h>70</h></coordinates><panel_attributes>Note: T indicates a 
+generic type.
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>

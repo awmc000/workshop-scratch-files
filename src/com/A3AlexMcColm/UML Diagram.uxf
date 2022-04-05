@@ -1,0 +1,62 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>141</x><y>280</y><w>270</w><h>190</h></coordinates><panel_attributes>DoublyLinkedList
+--
+#head: Node&lt;T&gt;
+#tail: Node&lt;T&gt;
+-- 
++append(Node&lt;T&gt;)
++prepend(Node&lt;T&gt;)
++printList()
++insertAfter(Node&lt;T&gt;, Node&lt;T&gt;)
++insertBefore(Node&lt;T&gt;, Node&lt;T&gt;)
++remove(Node&lt;T&gt;)
++insertionSortDoublyLinked()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>141</x><y>550</y><w>270</w><h>100</h></coordinates><panel_attributes>OrderedDLinkedList
+--
++findLarger(Node&lt;T&gt;): Node&lt;T&gt;
+#findLargerRecursive(Node&lt;T&gt;, Node&lt;T&gt;): Node&lt;T&gt;
++oldAdd(Node&lt;T&gt;)
++add(Node&lt;T&gt;)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>271</x><y>460</y><w>70</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-
+extends</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>141</x><y>690</y><w>270</w><h>50</h></coordinates><panel_attributes>OrderedListApp
+--
+main(String[])</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>271</x><y>640</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+uses</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>141</x><y>130</y><w>270</w><h>100</h></coordinates><panel_attributes>Node
+--
++data: T
++next: Node&lt;T&gt;
++previous: Node&lt;T&gt;
+--
++printData()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>271</x><y>220</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>451</x><y>280</y><w>260</w><h>170</h></coordinates><panel_attributes>EmployeeList
+--
+-empList : OrderedDLinkedList&lt;Employee&gt;
+--
++addEmp(Employee)
++findEmp(int) : Employee
++findEmp(String) : Employee
++findEmp(String, String) : Employee
++findEmpIndex(int) : int
++removeEmp(Employee)
++displayEmps()
++getSize(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>404</x><y>340</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>774</x><y>100</y><w>190</w><h>60</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Comparable
+--
+compareTo(Employee): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>454</x><y>40</y><w>260</w><h>180</h></coordinates><panel_attributes>Employee
+--
+-ID: int
+-firstName : String
+-lastName : String
+--
++getEmpID() : int
++setEmpID(int)
++getFirstName() : String
++setFirstName(String)
++getLastName() : String
++setLastName(String)
++compareTo(Employee): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>210</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>454</x><y>490</y><w>260</w><h>80</h></coordinates><panel_attributes>EmployeeApp
+--
++employeeList : EmployeeList
+--
++main(String[] args)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>440</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>120</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>194</x><y>40</y><w>170</w><h>70</h></coordinates><panel_attributes>Note:
+T refers to a generic type
+throughout the diagram.
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>

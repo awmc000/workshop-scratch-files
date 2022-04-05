@@ -1,0 +1,30 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>140</x><y>400</y><w>300</w><h>220</h></coordinates><panel_attributes>SortTestDriver
+--
++ getRandomInt(int, Random) : int
++ populateArray(int, Random, int[])
++ bubbleSortTest(int, Random, int[], boolean): float 
++ selectionSortTest(int, Random, int[], boolean): float 
++ insertionSortTest(int, Random, int[], boolean): float 
++ quickSortTest(int, Random, int[], boolean): float 
++ improvedQuickSortTest(int, Random, int[], boolean): float
++ mergeSortTest(int, Random, int[], boolean): float
++ radixSortTest(int, Random, int[], boolean): float
++ bigArraysTest()
++ functionalityTest(int)
++ main(String[])</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>230</y><w>200</w><h>80</h></coordinates><panel_attributes>QuadraticSortingAlgorithms
+--
++ bubbleSort(int[])
++ selectionSort(int[])
++ insertionSort(int[])</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>140</y><w>260</w><h>170</h></coordinates><panel_attributes>LinearithmicSortingAlgorithms
+--
+- partition(int[], int, int) : int
++ quickSort(int[], int, int)
+- improvedPartition(int[], int, int) : int
++ improvedQuickSort(int[], int, int)
+- merge(int[] int, int, int)
++ mergeSort(int[], int, int)
++ radixGetMaxLength(int[]) : int
++ radixGetLength(int) : int
++ radixSort(int[])</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>300</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+uses</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>300</y><w>50</w><h>120</h></coordinates><panel_attributes>lt=&lt;.
+uses</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element></diagram>

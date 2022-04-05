@@ -1,0 +1,219 @@
+Other Error:null
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+1
+Enter the ID you wish to search:
+100
+Found the following employee:
+Employee #100: Karenina, Anna
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+1
+Enter the ID you wish to search:
+400
+Found the following employee:
+Employee #400: Losurdo, Domenico
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+3
+Enter the first name, a space, and the surname you wish to search:
+Frank Lu
+Found the following employee:
+Employee #300: Lu, Frank
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+1
+Enter the ID of the new employee
+800
+Enter the given name of the new employee
+Hello World
+Enter the surname of the new employee
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+4
+Employee #100: Karenina, Anna 
+Employee #200: Monster, Cookie
+Employee #300: Lu, Frank
+Employee #400: Losurdo, Domenico
+Employee #500: Rodney, Walter
+Employee #800: World, Hello
+
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+1
+Enter the ID you wish to search:
+400
+Found the following employee:
+Employee #400: Losurdo, Domenico
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+1
+Enter the ID you wish to search:
+500
+Found the following employee:
+Employee #500: Rodney, Walter
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+4
+Employee #100: Karenina, Anna 
+Employee #200: Monster, Cookie
+Employee #300: Lu, Frank
+Employee #400: Losurdo, Domenico
+Employee #500: Rodney, Walter
+Employee #800: World, Hello
+
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+1
+Enter the ID of the new employee
+600
+Enter the given name of the new employee
+Remove Me
+Enter the surname of the new employee
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+2
+Enter the first name you wish to search:
+Remove
+Found the following employee:
+Employee #600: Me, Remove
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+2
+Employee Search Options: (enter a number)
+1. By ID number
+2. By first name
+3. By full name [with space]
+3
+Enter the first name, a space, and the surname you wish to search:
+Remove Me
+Found the following employee:
+Employee #600: Me, Remove
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+3
+Enter the ID of the employee you wish to remove.
+600
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+4
+Employee #100: Karenina, Anna 
+Employee #200: Monster, Cookie
+Employee #300: Lu, Frank
+Employee #400: Losurdo, Domenico
+Employee #500: Rodney, Walter
+Employee #600: Me, Remove
+Employee #800: World, Hello
+
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+3
+Enter the ID of the employee you wish to remove.
+300
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit
+4
+Employee #100: Karenina, Anna 
+Employee #200: Monster, Cookie
+Employee #300: Lu, Frank
+Employee #400: Losurdo, Domenico
+Employee #500: Rodney, Walter
+Employee #600: Me, Remove
+Employee #800: World, Hello
+
+[Employee System - Enter a number for the following options:]
+> 1. Add employee
+> 2. Find employee
+> 3. Remove an employee
+> 4. Display all employees
+> 5. Exit

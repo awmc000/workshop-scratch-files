@@ -1,0 +1,16 @@
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files>  & 'C:\Program Files\Java\jdk-16.0.1\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\AMC\AppData\Roaming\Code\User\workspaceStorage\7b07c7a3c3f5993863814dcaf9cf57aa\redhat.java\jdt_ws\workshop-scratch-files_855479e5\bin' 'com.A3AlexMcColm.OrderedListApp' 
+Values are added in this sequence: 556 948 980 939 185 
+Ordered List:
+185 556 939 948 980 
+
+Values are added in this sequence: Xenophobe, Board, Apple, Carp, Deal, 
+Ordered List:
+Apple Board Carp Deal Xenophobe 
+
+These integers will be removed from the integer list: 948 and 556
+Integer list after values are removed:
+185 939 980
+These strings will be removed from the string list: Board and Carp
+String list after values are removed:
+Apple Deal Xenophobe
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 

@@ -1,0 +1,44 @@
+======= Basic Stack and Queue Testing =======
+push-> 10 20 30 40 
+push-> Adam Bob Jack Tim
+pop-> 40 30 20 10
+pop-> Tim Jack Bob Adam
+enqueue-> 10 20 30 40
+enqueue-> Adam Bob Jack Tim
+dequeue-> 10 20 30 40
+dequeue-> Adam Bob Jack Tim
+======= Palindrome Testing =======
+Please enter a phrase, -1 to exit:Radar
+radar
+Radar is a palindrome.
+Please enter a phrase, -1 to exit:
+Mom
+mom
+Mom is a palindrome.
+Please enter a phrase, -1 to exit:
+Hagah 
+hagah
+Hagah is a palindrome.
+Please enter a phrase, -1 to exit:
+Haggg1gggah 
+haggg1gggah
+Haggg1gggah is a palindrome.
+Please enter a phrase, -1 to exit:
+looo_oOol  
+looooool
+looo_oOol is a palindrome.
+Please enter a phrase, -1 to exit:
+coko)okoc
+coko)okoc
+coko)okoc is a palindrome.
+Please enter a phrase, -1 to exit:
+-1
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 
+======= Palindrome Testing =======
+Evaluating this postfix expression : 10 3 2 + - 2 + 3 * 2 /
+Performing 3 + 2 = 5
+Performing 10 - 5 = 5
+Performing 5 + 2 = 7
+Performing 7 * 3 = 21
+Performing 21 / 2 = 10
+10
