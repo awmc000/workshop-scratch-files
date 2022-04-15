@@ -2,10 +2,13 @@ package A8AlexMcColm;
 
 /* Class: MaxHeap
  *
- * Author: ZyBooks, conversion to generics by Alex McColm
+ * Author: ZyBooks, conversion to generics and other tweaks by Alex McColm
+ * 
+ * Desc: max-heap data structure implementation, with percolate operations
+ * and heap invariant, etc.
  */
 class MaxHeap<T extends Comparable<T>> extends Object {
-    
+    // Protected fields, maintains encapsulation but allows subclass to access/mutate
     protected T[] genericArray;
     protected int heapSize;
 
@@ -14,6 +17,14 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         heapSize = 0;
     }
 
+    /* Method: resizeArray
+     * 
+     * Input: none
+     * 
+     * Output: none
+     * 
+     * Desc: Constructs new array of doubled size,
+     * copies over elements. */
     private void resizeArray() {
         int newLength = genericArray.length * 2;
         T[] newArray = (T[]) new Comparable[newLength];
@@ -28,6 +39,13 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         }
     }
 
+    /* Method: percolateUp
+     * 
+     * Input: int, node array index to percolate up
+     * 
+     * Output: none
+     * 
+     * Desc: modifies array */
     private void percolateUp(int nodeIndex) {
         while (nodeIndex > 0) {
             // Compute the parent node's index
@@ -52,6 +70,13 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         }
     }
 
+    /* Method: percolateDown
+     * 
+     * Input: int, node array index to percolate down
+     * 
+     * Output: none
+     * 
+     * Desc: modifies array */
     private void percolateDown(int nodeIndex) {
         int childIndex = 2 * nodeIndex + 1;
         T value = genericArray[nodeIndex];
@@ -88,6 +113,13 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         }
     }
 
+    /* Method: insert
+     * 
+     * Input: T, data value to insert
+     * 
+     * Output: none
+     * 
+     * Desc: adds to array */
     public void insert(T value) {
         // Resize if needed
         if (heapSize == genericArray.length) {
@@ -103,6 +135,13 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         percolateUp(heapSize - 1);
     }
 
+    /* Method: remove
+     *
+     * Input: none
+     * 
+     * Output: T, data at top of max heap 
+     * 
+     * Desc: removes from array*/
     public T remove() {
         // Save the max value from the root of the heap.
         T maxValue = genericArray[0];
@@ -121,6 +160,11 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         return maxValue;
     }
 
+    /* Method: getHeapArrayString
+     * 
+     * Input: none
+     * 
+     * Output: String, heap array contents*/
     public String getHeapArrayString() {
         if (heapSize == 0) {
             return "[]";
@@ -133,6 +177,13 @@ class MaxHeap<T extends Comparable<T>> extends Object {
         return arrayString + "]";
     }
 
+    /* Method: getHeapSize
+     * 
+     * Input: none
+     * 
+     * Output: int, heap size
+     * 
+     * Desc: simple getter method */
     public int getHeapSize() {
         return heapSize;
     }

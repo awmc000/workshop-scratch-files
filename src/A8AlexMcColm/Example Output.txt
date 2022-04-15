@@ -1,0 +1,21 @@
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files>  & 'C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\AMC\AppData\Roaming\Code\User\workspaceStorage\7b07c7a3c3f5993863814dcaf9cf57aa\redhat.java\jdt_ws\workshop-scratch-files_855479e5\bin' 'A8AlexMcColm.EmergencyRoom' 
+Empty before adds: true
+Enqueued: Lin Huimin
+Enqueued: Li Xiaolong
+Enqueued: Ronald McDonaldEEEEEEEEEE
+Enqueued: William Foster
+Enqueued: Amilcar Cabral
+Enqueued: Nikita
+Number of patients waiting: 7
+Empty after adds: false
+Peeking at top: Lin Huimin
+============================================================
+Currently helping: Lin Huimin               || Priority: 40
+Currently helping: Ronald McDonaldEEEEEEEEEE|| Priority: 30
+Currently helping: Nikita                   || Priority: 20
+Currently helping: Li Xiaolong              || Priority: 20
+Currently helping: William Foster           || Priority: 0
+Currently helping: Amilcar Cabral           || Priority: 0
+Empty after removals: true
+============================================================
+PS C:\Users\AMC\IdeaProjects\workshop-scratch-files> 
