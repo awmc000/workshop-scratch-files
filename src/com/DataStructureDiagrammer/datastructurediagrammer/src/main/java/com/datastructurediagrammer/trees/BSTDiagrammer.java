@@ -10,11 +10,15 @@ import javax.imageio.ImageIO;
 public class BSTDiagrammer {
     public static <T extends Comparable<T>> void draw(Graphics2D graphics, BSTNode<T> node, int x, int y, int increment) { 
         if (node == null) { 
-            //x -= increment;
-            //y -= increment;
             return;
         } else {
             draw(graphics, node.left, x - increment, y + increment, increment);
+            if (node.left != null ) { 
+                graphics.drawLine(x, y, x - increment, y + increment);
+            }
+            if (node.right != null) { 
+                graphics.drawLine(x, y, x + increment, y + increment);
+            }
             // draw current bst node
             graphics.setColor(Color.BLACK);
             graphics.drawOval(x, y, increment, increment);
