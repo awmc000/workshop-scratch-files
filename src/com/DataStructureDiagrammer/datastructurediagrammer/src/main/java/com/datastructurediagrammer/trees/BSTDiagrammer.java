@@ -10,8 +10,8 @@ import javax.imageio.ImageIO;
 public class BSTDiagrammer {
     public static <T extends Comparable<T>> void draw(Graphics2D graphics, BSTNode<T> node, int x, int y, int increment) { 
         if (node == null) { 
-            x -= increment;
-            y -= increment;
+            //x -= increment;
+            //y -= increment;
             return;
         } else {
             draw(graphics, node.left, x - increment, y + increment, increment);
