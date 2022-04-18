@@ -10,7 +10,11 @@ import java.awt.Graphics2D;
 import java.awt.Color;
 
 public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<SinglyLinkedList>*/ {
-    private static <T extends Comparable<T>> void drawNextPointer(SLLNode<T> currentNode, Graphics2D graphics,
+    /* Where is currentNode used in this method? **removed**
+     * If this method does not take a SLLNode as parameter, it can be used exactly as is by DoublyLinkedListDiagrammer,
+     * so I can have DoublyLinkedListDiagrammer extend this class.
+     */
+    protected static <T extends Comparable<T>> void drawNextPointer(Graphics2D graphics, 
             int imageWidth, int i, int nodeHeight, int margin) {
         // (list.getLength() >= i + 2) {
 
@@ -77,7 +81,7 @@ public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<Singly
             
             // If there is a next node, draw a red vertical line representing the next pointer.
             if (currentNode.next != null) {
-                drawNextPointer(currentNode, graphics, imageWidth, i, nodeHeight, margin);
+                drawNextPointer(graphics, imageWidth, i, nodeHeight, margin);
             }
 
             // Continue traversal, to next node which needs to be drawn.

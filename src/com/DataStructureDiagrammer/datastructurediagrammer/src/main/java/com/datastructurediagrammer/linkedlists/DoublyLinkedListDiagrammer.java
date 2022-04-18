@@ -9,36 +9,9 @@ import javax.imageio.ImageIO;
 import java.awt.Graphics2D;
 import java.awt.Color;
 
-public class DoublyLinkedListDiagrammer {
-    private static <T extends Comparable<T>> void drawNextPointer(DLLNode<T> currentNode, Graphics2D graphics,
-            int imageWidth, int i, int nodeHeight, int margin) {
-        // (list.getLength() >= i + 2) {
+public class DoublyLinkedListDiagrammer extends SinglyLinkedListDiagrammer {
 
-        // The line representing the next pointer will be red
-        graphics.setColor(Color.red);
-
-        // declare integers for the 4 coordinates of the line
-        int x1, x2, y1, y2;
-
-        // The line representing the next pointer should be toward the left side
-        x1 = imageWidth / 4;
-        x2 = x1;
-
-        y1 = (i * nodeHeight + margin) + graphics.getFontMetrics().getHeight();
-        y2 = y1 + 13;
-        // int rectHeight = (i * nodeHeight + margin) +
-        // graphics.getFontMetrics().getHeight() + 2 * margin;
-        // y2 = rectHeight;
-
-        graphics.drawLine(x1, y1, x2, y2);
-
-        // Finally, draw a triangle to be the point of the arrow.
-        int[] arrowXPoints = { x1 - 2, x1, x1 + 2 };
-        int[] arrowYPoints = { y2 - 2, y2, y2 - 2 };
-        graphics.drawPolygon(arrowXPoints, arrowYPoints, 3);
-    }
-
-    private static <T extends Comparable<T>> void drawPreviousPointer(DLLNode<T> currentNode, Graphics2D graphics,
+    private static <T extends Comparable<T>> void drawPreviousPointer(Graphics2D graphics,
             int imageWidth, int i, int nodeHeight, int margin) {
 
         graphics.setColor(Color.BLUE);
@@ -101,11 +74,11 @@ public class DoublyLinkedListDiagrammer {
                     (nodeHeight * i) + graphics.getFontMetrics().getHeight());
 
             if (currentNode.next != null) {
-                drawNextPointer(currentNode, graphics, imageWidth, i, nodeHeight, margin);
+                drawNextPointer(graphics, imageWidth, i, nodeHeight, margin);
             }
             
             if (currentNode.previous != null) {
-                drawPreviousPointer(currentNode, graphics, imageWidth, i, nodeHeight, margin);
+                drawPreviousPointer(graphics, imageWidth, i, nodeHeight, margin);
             }
             // Continue traversal, to next node which needs to be drawn.
             currentNode = currentNode.next;
