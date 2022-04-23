@@ -8,36 +8,64 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class BSTDiagrammer {
-    public static <T extends Comparable<T>> void draw(Graphics2D graphics, BSTNode<T> node, int x, int y, int increment, int level) { 
+    public static <T extends Comparable<T>> void draw(Graphics2D graphics, BSTNode<T> node, int x, int y, int increment, int level, int treeHeight) { 
         //increment *= 2;
+        int currXIncrement = (increment * (treeHeight - level));
+        int halfIncrement = increment / 2;
         if (node == null) { 
             return;
         } else {
-            draw(graphics, node.left, x - increment - (increment * level), y + (2 * increment), increment, level + 1); // test: replace 2 * increment with increment to reverse
-            if (node.left != null ) { 
-                //graphics.drawLine(x, y + increment / 2, x - increment / 2 - (increment * level), y + increment);
-                graphics.drawLine(x, y + increment / 2, x - increment / 2 - (increment * level), y + (2 * increment));
+            if ((node.left != null)) {
+                if ((node.left.left != null) ^ (node.left.right != null)) { 
+                    draw(graphics, node.left, x - increment - (currXIncrement / 2), y + (2 * increment), increment, level + 1, treeHeight);
+                    graphics.drawLine(x, y + halfIncrement, x - halfIncrement - (currXIncrement / 2), y + (2 * increment));
+                } 
+                // If right child is an internal node with 1 child, draw right child's children at half distance.
+                else if ((node.left.left != null) || (node.left.right != null)) {
+                    // If left node is an internal node:
+                    draw(graphics, node.left, x - increment - currXIncrement, y + (2 * increment), increment, level + 1, treeHeight);
+                    graphics.drawLine(x, y + halfIncrement, x - halfIncrement - currXIncrement, y + (2 * increment));
+                }
+                else {
+                    // If left node is a leaf:
+                    draw(graphics, node.left, x - increment, y + (2 * increment), increment, level + 1, treeHeight);
+                    graphics.drawLine(x, y + halfIncrement, x - halfIncrement, y + (2 * increment));
+                }
             }
            
             // draw current bst node
             graphics.setColor(Color.BLACK);
             graphics.drawOval(x, y, increment, increment);
             //graphics.drawRect(x, y, 2, 2);
-            graphics.drawString(node.getData().toString(), x + increment / 2, y + increment / 2);;
+            String dataString = node.getData().toString();
+            graphics.drawString(dataString, x + halfIncrement - (graphics.getFontMetrics().stringWidth(dataString) / 2), y + halfIncrement);;
             
-            draw(graphics, node.right, x + increment + (increment * level), y + (2 * increment), increment, level + 1);
+            // If node has a right child
             if (node.right != null) { 
-                //graphics.drawLine(x + increment, y + increment / 2, x + increment + increment / 2 + (increment * level), y + increment);
-                graphics.drawLine(x + increment, y + increment / 2, x + increment + increment / 2 + (increment * level), y + (2 * increment));
+                // If right child is an internal node with 1 child, draw it at half distance
+                if ((node.right.left != null) ^ (node.right.right != null)) { 
+                    draw(graphics, node.right, x + increment + (currXIncrement / 2), y + (2 * increment), increment, level + 1, treeHeight);
+                    graphics.drawLine(x + increment, y + halfIncrement, x + increment + halfIncrement + (currXIncrement / 2), y + (2 * increment));
+                }
+                // If right child is an internal node with 1 or 2 children, draw right child's children further apart.
+                else if ((node.right.left != null) || (node.right.right != null)) { 
+                    draw(graphics, node.right, x + increment + currXIncrement, y + (2 * increment), increment, level + 1, treeHeight);
+                    graphics.drawLine(x + increment, y + halfIncrement, x + increment + halfIncrement + currXIncrement, y + (2 * increment));
+                } 
+                // If right child is a leaf node, draw right child's children closer. 
+                else {
+                    draw(graphics, node.right, x + increment, y + (2 * increment), increment, level + 1, treeHeight);
+                    graphics.drawLine(x + increment, y + halfIncrement, x + increment + halfIncrement, y + (2 * increment));
+                }
             }
         }
     }
+
     public static <T extends Comparable<T>> void renderDiagram(BinarySearchTree<T> bst, String filepath) { 
         int nodeSquare = 40;
-        int imageWidth = (int) Math.pow(2, bst.getHeight()); // Width should be proportional to 2^H
-            imageWidth *= nodeSquare;
+        int imageHeight = nodeSquare * bst.getHeight() * 3;
 
-        int imageHeight = bst.getHeight() * (nodeSquare * 2); 
+        int imageWidth = nodeSquare * bst.getHeight() * bst.getHeight(); 
 
         BufferedImage bufferedImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
     
@@ -47,7 +75,7 @@ public class BSTDiagrammer {
         graphics.fillRect(0, 0, imageWidth, imageHeight);
 
         // recursive draw method called on root
-        draw(graphics, bst.root, imageWidth / 2, 0, nodeSquare, 0);
+        draw(graphics, bst.root, imageWidth / 2, 0, nodeSquare, 0, bst.getHeight());
 
         // close graphics object
         graphics.dispose();

@@ -84,4 +84,16 @@ public class BinarySearchTree<T extends Comparable<T>> {
         int maxDepth = Math.max(leftHeight, rightHeight) + 1;
         return maxDepth; 
     }
+
+    public int getTotalNodes() { 
+        return countNodes(0, root);
+    }
+
+    private int countNodes(int count, BSTNode<T> node) {
+        if (node == null) { 
+            return 0;
+        } else {
+            return countNodes(count, node.left) + count + 1 + countNodes(count, node.right);
+        }
+    }
 }

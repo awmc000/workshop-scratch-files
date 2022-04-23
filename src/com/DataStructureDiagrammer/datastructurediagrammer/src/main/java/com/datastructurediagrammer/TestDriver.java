@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Random;
 
+import java.time.LocalDateTime;
+
 import com.datastructurediagrammer.linkedlists.DoublyLinkedList;
 import com.datastructurediagrammer.linkedlists.DoublyLinkedListDiagrammer;
 import com.datastructurediagrammer.linkedlists.SinglyLinkedList;
@@ -38,7 +40,7 @@ public class TestDriver {
         SinglyLinkedList<Integer> intList = new SinglyLinkedList<Integer>();
         DoublyLinkedList<Integer> intDList = new DoublyLinkedList<Integer>();
 
-        for (int i = 0; i < 30; ++i) { 
+        for (int i = 0; i < 100; ++i) { 
             intList.appendData(rand.nextInt(10000));
             intDList.appendData(rand.nextInt(100));
         }
@@ -48,34 +50,34 @@ public class TestDriver {
         DoublyLinkedListDiagrammer.renderDiagram(intDList, "doublelinkedlist.png");
     }
     public static void bstTest() { 
-        BinarySearchTree<String> stringTree = new BinarySearchTree<String>();
+        //BinarySearchTree<String> stringTree = new BinarySearchTree<String>();
         Random rand = new Random();
-        String[] characters = {"a", "b", "c", "d", "e", "f"};
-        String generatedString; 
-        for (int i = 0; i < 30; ++i) {
-            generatedString = characters[rand.nextInt(6)] + characters[rand.nextInt(6)] + characters[rand.nextInt(6)];
-            stringTree.insert(generatedString);
-        }
-        System.out.println("printing:");
-        stringTree.printInOrder(stringTree.root);
-        System.out.println("height: " + stringTree.getHeight());
+        /*String[] characters = {"a", "b", "c", "d", "e", "f"};
+        String generatedString; */
+        
+        //System.out.println("printing:");
+        //stringTree.printInOrder(stringTree.root);
+        //System.out.println("height: " + stringTree.getHeight());
         BinarySearchTree<Integer> heightTree = new BinarySearchTree<>();
-        heightTree.insert(2);
-        heightTree.insert(3);
-        heightTree.insert(-1);
-        System.out.println("Should be 3: " + heightTree.getHeight());
-        heightTree.insert(1);
-        System.out.println("SHould be 3 still: " + heightTree.getHeight());
-        heightTree.insert(5);
-        System.out.println("should be 4: " + heightTree.getHeight());
-        heightTree.insert(4);
-        BSTDiagrammer.renderDiagram(heightTree, "short_tree.png");
-        BSTDiagrammer.renderDiagram(stringTree, "long_tree.png");
+        BinarySearchTree<Integer> randomTree = new BinarySearchTree<>();
+        int testCount = 40;
+        for (int i = 0; i < testCount; ++i) {
+            heightTree.insert(i);
+            randomTree.insert(rand.nextInt(10000));
+        }
+        System.out.println(heightTree.getTotalNodes());
+        String timeStamp = LocalDateTime.now().toString().replace(':', '-');
+        BSTDiagrammer.renderDiagram(heightTree, timeStamp + "int_max_tree" + testCount + ".png");
+        BSTDiagrammer.renderDiagram(randomTree, timeStamp + "random_int_tree" + testCount + ".png");
+        System.out.println("saved");
+        //BSTDiagrammer.renderDiagram(stringTree, "long_tree.png");
     }
     public static void main(String[] args) {
         try { 
             //sllTest();
             bstTest();
-        } catch (Throwable t) { }
+        } catch (Throwable t) {
+            t.printStackTrace();
+         }
     }
 }
