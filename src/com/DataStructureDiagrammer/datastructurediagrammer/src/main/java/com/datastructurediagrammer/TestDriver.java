@@ -7,6 +7,7 @@ import java.util.Random;
 
 import java.time.LocalDateTime;
 
+import com.datastructurediagrammer.arrays.ArrayDiagrammer;
 import com.datastructurediagrammer.linkedlists.DoublyLinkedList;
 import com.datastructurediagrammer.linkedlists.DoublyLinkedListDiagrammer;
 import com.datastructurediagrammer.linkedlists.SinglyLinkedList;
@@ -72,10 +73,20 @@ public class TestDriver {
         System.out.println("saved");
         //BSTDiagrammer.renderDiagram(stringTree, "long_tree.png");
     }
+    public static void arrayTest() { 
+        String timeStamp = LocalDateTime.now().toString().replace(':', '-');
+        Integer[] intArray = {2, 4, 88, 9993, 234, 0, -1, 23, 4};
+        ArrayDiagrammer<Integer> arrayDiagrammer = new ArrayDiagrammer<Integer>();
+        arrayDiagrammer.drawToFile(intArray, "Integers", timeStamp + "int_array.png");
+        String[] stringArray = {"Hello", "world", "object", "oriented", "java", "is", "interpreted", "AND", "compiled"};
+        ArrayDiagrammer<String> stringDiagrammer = new ArrayDiagrammer<String>();
+        stringDiagrammer.drawToFile(stringArray, "String", timeStamp + "string_array.png");
+    }
     public static void main(String[] args) {
         try { 
             //sllTest();
-            bstTest();
+            //bstTest();
+            arrayTest();
         } catch (Throwable t) {
             t.printStackTrace();
          }
