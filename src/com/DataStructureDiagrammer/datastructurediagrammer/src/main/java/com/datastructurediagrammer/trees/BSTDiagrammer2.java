@@ -126,6 +126,20 @@ public class BSTDiagrammer2<T extends Comparable<T>> {
 
             // write the data value itself
             graphics.drawString(currentData, dataX, dataY);
+
+            // If not root, draw a line to parent 
+            if (currentNodeWrapper.level != 0) { 
+                boolean isLeftChild = currentNodeWrapper.node.parent.left == currentNodeWrapper.node;
+                boolean isRightChild = currentNodeWrapper.node.parent.right == currentNodeWrapper.node;
+                
+                assert isLeftChild ^ isRightChild; 
+
+                //TODO: Get this exception set up and in action
+                /*if (!(isLeftChild ^ isRightChild)) { 
+                    throw new Exception("Determing the parent went wrong: " +
+                    "The node was not found to be either its parent left or right child.");
+                }*/
+            }
         }
 
         // Construct the file at filepath given as param
