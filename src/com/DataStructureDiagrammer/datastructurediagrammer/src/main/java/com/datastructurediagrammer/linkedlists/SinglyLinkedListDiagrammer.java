@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 
 import java.awt.Graphics2D;
 import java.awt.Color;
+import java.awt.FontMetrics;
 
 public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<SinglyLinkedList>*/ {
     /* Where is currentNode used in this method? **removed**
@@ -28,7 +29,9 @@ public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<Singly
         x1 = imageWidth / 4;
         x2 = x1;
 
-        y1 = (i * nodeHeight + margin) + graphics.getFontMetrics().getHeight();
+        int fontHeight = graphics.getFontMetrics().getHeight();
+
+        y1 = (i * nodeHeight + margin) + fontHeight;
         y2 = y1 + 13;
         // int rectHeight = (i * nodeHeight + margin) +
         // graphics.getFontMetrics().getHeight() + 2 * margin;
@@ -42,10 +45,12 @@ public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<Singly
         graphics.drawPolygon(arrowXPoints, arrowYPoints, 3);
     }
     
-    public static <T extends Comparable<T>> void/*File*/ renderDiagram(SinglyLinkedList<T> list, String filepath) { 
+    public static <T extends Comparable<T>> void/*File*/ renderDiagram(SinglyLinkedList<T> list, String title, String filepath) { 
         final int imageWidth = 90;
         final int nodeHeight = 30;
-        int imageHeight = list.getLength() * nodeHeight; // For 4 nodes, img will be 120px, etc
+        //int hBuffer = 30;
+        int vBuffer = 30;
+        int imageHeight = list.getLength() * nodeHeight + (2 * vBuffer); // For 4 nodes, img will be 120px, etc
         
         BufferedImage bufferedImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
 
@@ -68,6 +73,10 @@ public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<Singly
 
         SLLNode<T> currentNode = list.head;
 
+        FontMetrics fontMetrics = graphics.getFontMetrics();
+
+        int fontHeight = fontMetrics.getHeight();
+
         for (int i = 0; i < list.getLength(); ++i) { 
             graphics.setColor(Color.black);
             
@@ -75,8 +84,8 @@ public class SinglyLinkedListDiagrammer /*extends DataStructureDiagrammer<Singly
 
             stringWidth = dataString.length();
 
-            graphics.drawRect(imageWidth / 5, i * nodeHeight + margin, (imageWidth / 5) * 3, graphics.getFontMetrics().getHeight() + 2 * margin);
-            graphics.drawString(dataString, imageWidth / 2 - stringWidth * digitWidth / 2, (nodeHeight * i) + graphics.getFontMetrics().getHeight());
+            graphics.drawRect(imageWidth / 5, i * nodeHeight + margin, (imageWidth / 5) * 3, fontHeight + 2 * margin);
+            graphics.drawString(dataString, imageWidth / 2 - stringWidth * digitWidth / 2, (nodeHeight * i) + fontHeight);
             //graphics.drawRect(imageWidth / 2 - stringWidth * digitWidth / 2, nodeHeight * i - margin, imageWidth / 2, graphics.getFontMetrics().getHeight() + 2 * margin);
             
             // If there is a next node, draw a red vertical line representing the next pointer.

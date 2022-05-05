@@ -3,6 +3,7 @@ package com.datastructurediagrammer.trees;
 import java.awt.image.BufferedImage;
 import java.awt.Graphics2D;
 import java.awt.Color;
+import java.awt.FontMetrics;
 import java.io.File;
 import java.io.IOException;
 
@@ -39,8 +40,8 @@ public class BSTDiagrammer2<T extends Comparable<T>> {
     // Recursive method following the general pattern of an in-order traversal.
     private void wrapNodes(ArrayList<NodeWrapper> wrapperArray, BinarySearchTree<T> tree, BSTNode<T> node, BSTNode<T> parent, int level, int hOffset) { 
         if (node.left != null) { 
-            wrapNodes(wrapperArray, tree, node.left, node, level + 1, hOffset - 1);
-            wrapperArray.add(new NodeWrapper(node.left, node, level + 1, hOffset - 1));
+            wrapNodes(wrapperArray, tree, node.left, node, level + 1, hOffset + 1);
+            wrapperArray.add(new NodeWrapper(node.left, node, level + 1, hOffset + 1));
         }
         /* The node at level 0, root, is the only node which is added while at that level. 
          * All descendant nodes are added from the level above, by the checks 
@@ -50,8 +51,8 @@ public class BSTDiagrammer2<T extends Comparable<T>> {
             wrapperArray.add(new NodeWrapper(node, null, 0, 0));
         }
         if (node.right != null) { 
-            wrapNodes(wrapperArray, tree, node.right, node, level + 1, hOffset + 1);
-            wrapperArray.add(new NodeWrapper(node.left, node, level + 1, hOffset + 1));
+            wrapNodes(wrapperArray, tree, node.right, node, level + 1, hOffset - 1);
+            wrapperArray.add(new NodeWrapper(node.right, node, level + 1, hOffset - 1));
         }
     }
 
@@ -71,7 +72,7 @@ public class BSTDiagrammer2<T extends Comparable<T>> {
         
         // Count how many nodes on each level
         for (int i = 0; i < wrapperArray.size(); ++i) { 
-            levelPopulations[i] = wrapperArray.get(i).level;
+            levelPopulations[wrapperArray.get(i).level] = wrapperArray.get(i).level;
         }
 
         // Find the level with the most nodes and assign it to widestLevel
@@ -90,33 +91,48 @@ public class BSTDiagrammer2<T extends Comparable<T>> {
         int cellHeight = 20; // PLACEHOLDER
 
         // Determine width and height of image based on number of objects and multipliers given.
-        int imageWidth = (2 * hBuffer) + widestLevel * cellWidth * 2; // TODO: Calculate this better
+        int imageWidth = (2 * hBuffer) + (widestLevel * 2) * (cellWidth * 2); // TODO: Calculate this better
         int imageHeight = (2 * vBuffer) + (tree.getHeight() * cellHeight * 2);
         // Set up BufferedImage of a size based on the height and max width
         BufferedImage bufferedImage = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
 
         // Get the graphics object from it
         Graphics2D graphics = (Graphics2D) bufferedImage.getGraphics();
+        
+        // Fill white background
+        graphics.setColor(Color.WHITE);
+        graphics.fillRect(0, 0, imageWidth, imageHeight);
+
+        // Grab font metrics
+        FontMetrics fontMetrics = graphics.getFontMetrics();
 
         // Set pen to black
         graphics.setColor(Color.BLACK);
 
         // Draw title in the centre of the vertical buffer above the BST.
-        int titleX = (imageWidth / 2) - (graphics.getFontMetrics().stringWidth(title) / 2);
+        int titleX = (imageWidth / 2) - (fontMetrics.stringWidth(title) / 2);
         int titleY = vBuffer / 2;
         
         graphics.drawString(title, titleX, titleY);
 
+        System.out.println("The wrapper array has size" + wrapperArray.size());
+
         for (int i = 0; i < wrapperArray.size(); ++i) { 
             // Current node. Brand new, still in the wrapper :) 
             NodeWrapper currentNodeWrapper = wrapperArray.get(i);
+            
+
+            if (!(currentNodeWrapper.node != null)) { 
+                continue;
+            }
 
             // String form of current node's data 
-            String currentData = currentNodeWrapper.node.toString();
-
+            String currentData = currentNodeWrapper.node.getData().toString();
+            System.out.println("handling wrapper of node " + currentData + " current level " 
+            + currentNodeWrapper.level + " current hOffset " + currentNodeWrapper.hOffset);
             
             // x-coordinate to write current data
-            int dataX = imageWidth / 2 - 2 * (currentNodeWrapper.hOffset * cellWidth); // TODO: Calculate better
+            int dataX = (imageWidth / 2) - 2 * (currentNodeWrapper.hOffset * cellWidth); // TODO: Calculate better
             
             // y-coordinate to write current data
             int dataY = vBuffer + (2 * cellHeight * currentNodeWrapper.level);
@@ -125,20 +141,26 @@ public class BSTDiagrammer2<T extends Comparable<T>> {
             graphics.drawRect(dataX, dataY, cellWidth, cellHeight);
 
             // write the data value itself
-            graphics.drawString(currentData, dataX, dataY);
+            graphics.drawString(currentData, dataX + ((cellWidth - fontMetrics.stringWidth(currentData)) / 2), dataY + graphics.getFontMetrics().getHeight());
 
-            // If not root, draw a line to parent 
-            if (currentNodeWrapper.level != 0) { 
-                boolean isLeftChild = currentNodeWrapper.node.parent.left == currentNodeWrapper.node;
-                boolean isRightChild = currentNodeWrapper.node.parent.right == currentNodeWrapper.node;
-                
-                assert isLeftChild ^ isRightChild; 
+            // If left child not null, draw a line to it
+            if (currentNodeWrapper.node.left != null) { 
+                int x1, y1, x2, y2;
+                x1 = dataX + (cellWidth / 2); // centre of current box
+                y1 = dataY + cellHeight; // bottom of current box
 
-                //TODO: Get this exception set up and in action
-                /*if (!(isLeftChild ^ isRightChild)) { 
-                    throw new Exception("Determing the parent went wrong: " +
-                    "The node was not found to be either its parent left or right child.");
-                }*/
+                x2 = x1 - (cellWidth * 2);
+                y2 = y1 + cellHeight;
+                graphics.drawLine(x1,y1,x2,y2);
+            }
+            if (currentNodeWrapper.node.right != null) { 
+                int x1, y1, x2, y2;
+                x1 = dataX + (cellWidth / 2); // centre of current box
+                y1 = dataY + cellHeight; // bottom of current box
+
+                x2 = x1 + (cellWidth * 2);
+                y2 = y1 + cellHeight;
+                graphics.drawLine(x1,y1,x2,y2);
             }
         }
 

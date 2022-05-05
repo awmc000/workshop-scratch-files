@@ -9,10 +9,12 @@ import java.time.LocalDateTime;
 
 import com.datastructurediagrammer.arrays.ArrayDiagrammer;
 import com.datastructurediagrammer.linkedlists.DoublyLinkedList;
-import com.datastructurediagrammer.linkedlists.DoublyLinkedListDiagrammer;
+//import com.datastructurediagrammer.linkedlists.DoublyLinkedListDiagrammer;
 import com.datastructurediagrammer.linkedlists.SinglyLinkedList;
 import com.datastructurediagrammer.linkedlists.SinglyLinkedListDiagrammer;
+import com.datastructurediagrammer.sorting.BubbleSortArrayDiagrammer;
 import com.datastructurediagrammer.trees.BSTDiagrammer;
+import com.datastructurediagrammer.trees.BSTDiagrammer2;
 import com.datastructurediagrammer.trees.BinarySearchTree;
 
 public class TestDriver {
@@ -46,9 +48,9 @@ public class TestDriver {
             intDList.appendData(rand.nextInt(100));
         }
 
-        SinglyLinkedListDiagrammer.renderDiagram(sList, "listDiagram.png");
-        SinglyLinkedListDiagrammer.renderDiagram(intList, "intListDiagram.png");
-        DoublyLinkedListDiagrammer.renderDiagram(intDList, "doublelinkedlist.png");
+        SinglyLinkedListDiagrammer.renderDiagram(sList, "String LL", "listDiagram.png");
+        SinglyLinkedListDiagrammer.renderDiagram(intList, "Int LL", "intListDiagram.png");
+        //DoublyLinkedListDiagrammer.renderDiagram(intDList, "Int LL 2", "doublelinkedlist.png");
     }
     public static void bstTest() { 
         //BinarySearchTree<String> stringTree = new BinarySearchTree<String>();
@@ -81,11 +83,27 @@ public class TestDriver {
         String[] stringArray = {"Hello", "world", "object", "oriented", "java", "is", "interpreted", "AND", "compiled"};
         ArrayDiagrammer<String> stringDiagrammer = new ArrayDiagrammer<String>();
         stringDiagrammer.drawToFile(stringArray, "String", timeStamp + "string_array.png");
+        BubbleSortArrayDiagrammer<Integer> bubbleSortArrayDiagrammer = new BubbleSortArrayDiagrammer<>();
+        bubbleSortArrayDiagrammer.renderSortingOperation(intArray, "Int Array", timeStamp + "int_array_sorting.png");
     }
+
+    public static void bstTest2() { 
+        BSTDiagrammer2<Integer> bstDiagrammer = new BSTDiagrammer2<>();
+        BinarySearchTree<Integer> intTree = new BinarySearchTree<>();
+        
+
+        int numbersToInsert = 16;
+        Random rand = new Random();
+        for (int i = 0; i < numbersToInsert; ++i) { 
+            String timeStamp = LocalDateTime.now().toString().replace(':', '-');
+            intTree.insert(rand.nextInt(1000));
+            bstDiagrammer.renderDiagram(intTree, 50, 50, "Integer BST", timeStamp + " - " + (i + 1) + " numbers - intTree.png");
+        }
+        
+    }
+
     public static void main(String[] args) {
         try { 
-            //sllTest();
-            //bstTest();
             arrayTest();
         } catch (Throwable t) {
             t.printStackTrace();
